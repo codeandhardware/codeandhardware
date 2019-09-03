@@ -73,7 +73,7 @@ $jsvar = '
         var c_year = \''.date('Y').'\';
         
         var ib_graph_primary_color = \'#2a2d4f\';
-        var ib_graph_secondary_color = \'#240b36\';
+        var ib_graph_secondary_color = \'#375AEC\';
 
 
 
