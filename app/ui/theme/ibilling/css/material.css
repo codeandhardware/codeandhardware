@@ -44,17 +44,17 @@ fieldset[disabled] .form-material.floating > label {
 
 .form-material > .form-control:focus {
     background-color: transparent;
-    -webkit-box-shadow: 0 2px 0 #c31432;
-    box-shadow: 0 2px 0 #c31432;
+    -webkit-box-shadow: 0 2px 0 #2a2d4f;
+    box-shadow: 0 2px 0 #2a2d4f;
 }
 
 .form-material > .form-control:focus + label {
-    color: #c31432;
+    color: #2a2d4f;
 }
 
 .form-material > .form-control:focus ~ .input-group-addon {
-    -webkit-box-shadow: 0 2px 0 #c31432;
-    box-shadow: 0 2px 0 #c31432;
+    -webkit-box-shadow: 0 2px 0 #2a2d4f;
+    box-shadow: 0 2px 0 #2a2d4f;
 }
 
 .form-material > .form-control:focus + label,
@@ -408,7 +408,7 @@ fieldset[disabled] .form-material.floating > label {
 
 
 .md-btn-primary, .md-btn-primary:active, .md-btn-primary:focus, .md-btn-primary:hover {
-    background: #c31432;
+    background: #2a2d4f;
     color: #fff;
 }
 
@@ -444,7 +444,7 @@ fieldset[disabled] .form-material.floating > label {
 
 .md-preloader svg circle {
     fill: none;
-    stroke: #c31432;
+    stroke: #2a2d4f;
     stroke-linecap: round;
     -webkit-animation: arc 1.2s cubic-bezier(.4, 0, .2, 1) infinite;
     animation: arc 1.2s cubic-bezier(.4, 0, .2, 1) infinite
@@ -738,7 +738,7 @@ a.waves-effect .waves-ripple {
 }
 
 .md-fab.md-fab-primary {
-    background: #c31432;
+    background: #2a2d4f;
 }
 
 .md-fab.md-fab-primary>i {
