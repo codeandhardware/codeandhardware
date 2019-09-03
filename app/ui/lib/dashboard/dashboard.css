@@ -16,7 +16,7 @@
     width: 100%;
     height: 340px;
     padding: 15px 20px;
-    background: #c31432;
+    background: #2a2d4f;
 
     color: #fff;
     position: relative;
@@ -80,7 +80,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: #c31432;
+    background: #2a2d4f;
     color: #fff;
     margin-left: -250px
 }

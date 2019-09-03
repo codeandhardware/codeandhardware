@@ -93,7 +93,7 @@
 
                     <div class="form-group col-md-12">
                         <label for="color">{$_L['Color']}</label>
-                        <input type="text" class="form-control color" id="color" name="color" value="#c31432">
+                        <input type="text" class="form-control color" id="color" name="color" value="#2a2d4f">
                     </div>
 
 
