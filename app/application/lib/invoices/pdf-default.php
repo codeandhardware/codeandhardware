@@ -53,7 +53,7 @@
                 <span style="font-size: 18px; color: #2f4f4f"><strong>Invoice # <?php echo $d['id']; ?></strong></span>
             </td>
             <td style="border: 0;  text-align: right" width="62%"><div id="logo">
-                    <img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo-md.png" alt="logo" /> <br>
+                    <img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo-md.png" alt="logo" style="width: 50%;" /> <br>
                     <?php echo $config['caddress']; ?>
                 </div></td>
         </tr>
