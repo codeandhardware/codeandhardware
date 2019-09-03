@@ -170,7 +170,7 @@
     <table width="100%">
         <tr>
             <td style="border: 0;  text-align: left" width="62%">
-                <img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" />
+                <img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" class="w-50" />
                 <br><br>
                 <span style="font-size: 18px; color: #2f4f4f"><strong><?php echo $_L['INVOICE']; ?> # <?php
                         if($d['cn'] != ''){
