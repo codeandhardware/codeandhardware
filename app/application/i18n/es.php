@@ -651,7 +651,7 @@ $_L['Invoice Total'] = 'Importe Total';
 $_L['Total Paid'] = 'Total Pagado';
 $_L['Unique Invoice URL'] = 'URL Única de Factura';
 $_L['Company Name'] = 'Nombre de Empresa';
-$_L['ATTN'] = 'A/A'; # The short of Atention, used in invoicing
+$_L['ATTN'] = 'Cliente'; # The short of Atention, used in invoicing
 
 /*
  * @ From V 2.3.0
