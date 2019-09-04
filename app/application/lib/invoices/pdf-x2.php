@@ -105,11 +105,7 @@ if($config['rtl'] == 1){ ?>
                         ?></strong></span>
             </td>
             <td style="border: 0;  text-align: right" width="62%"><div id="logo" style="font-size:18px">
-<<<<<<< HEAD
                     <img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" class="w-50" /> <br> <br>
-=======
-                    <img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" /> TEST <br> <br>
->>>>>>> 1612da0bd8bd2266acfff548e6818364dcb9ac27
                     <?php echo $config['caddress']; ?>
                 </div></td>
         </tr>
