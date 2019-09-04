@@ -60,8 +60,8 @@
         #items td.balance { background: #eee !important; }
         #items td.blank { border: 0 !important; }
 
-        #terms { text-align: left; margin: 20px 0 0 0; }
-        #terms h5 { text-transform: uppercase; font: 10px Helvetica, Sans-Serif; letter-spacing: 0px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
+        #terms { text-align: left; margin: 10px 0 0 0; }
+        #terms h5 { text-transform: uppercase; font: 10px Helvetica, Sans-Serif; letter-spacing: 0px; border-bottom: 1px solid #e9ecef; padding: 0 0 8px 0; margin: 0 0 8px 0; }
         #terms textarea { width: 100%; text-align: left;}
 
 
@@ -105,7 +105,7 @@
                         ?></div></strong></span>
             </td>
             <td style="border: 0;  text-align: right text-size: 8px !important" width="50%"><div id="logo">
-<img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" class="img-fluid w-50 mb-2" /><br>
+<img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" class="img-fluid w-75 mb-2" /><br>
                     <p style="font-size: 12px !important;"><?php echo $config['caddress']; ?></p>
                 </div></td>
         </tr>
@@ -123,8 +123,9 @@
                     <strong><?php echo $_L['Invoiced To']; ?></strong> <br>
                     <?php if($a['company'] != '') {
                         ?>
-                        <?php echo $a['company']; ?> <br>
+                        
                        <?php echo $_L['ATTN']; ?>: <?php echo $a['account']; ?> <br>
+                       <?php echo $a['company']; ?> <br>
                     <?php
                     }
                     else{
@@ -330,7 +331,7 @@
         <div>
             <table class="table table-bordeless">
                 <tr>
-                    <td><p style="font-size: 12px !important"><b>Banesco Panamá</b><br>
+                    <td width="20%"><p style="font-size: 12px !important"><b>Banesco Panamá</b><br>
             Ahorros # 201001963028<br>
             Eduardo Betancourt</p></td>
                     <td><p style="font-size: 12px !important"><b>BAC Credomatic</b><br>
