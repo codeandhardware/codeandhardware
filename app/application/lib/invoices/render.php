@@ -24,24 +24,23 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php echo APP_URL.'/'; ?>application/storage/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="<?php echo APP_URL.'/'; ?>application/lib/invoices/css/default.css">
     <style>
 
-        * { margin: 0; padding: 0; }
+        
         body {
             font: 14px/1.4 Helvetica, Arial, sans-serif;
         }
         #page-wrap { width: 800px; margin: 0 auto; }
 
         textarea { border: 0; font: 14px Helvetica, Arial, sans-serif; overflow: hidden; resize: none; }
-        table { border-collapse: collapse; }
-        table td, table th { border: 1px solid black; padding: 5px; }
 
         #header { height: 15px; width: 100%; margin: 20px 0; background: #222; text-align: center; color: white; font: bold 15px Helvetica, Sans-Serif; text-decoration: uppercase; letter-spacing: 20px; padding: 8px 0px; }
 
         #address { width: 250px; height: 150px; float: left; }
         #customer { overflow: hidden; }
 
-        #logo { text-align: right; float: right; position: relative; margin-top: 25px; border: 1px solid #fff; max-width: 540px; overflow: hidden; }
+        #logo { text-align: right; float: right; position: relative; margin-top: 25px; border: 0px solid #fff; max-width: 540px; overflow: hidden; }
         #customer-title { font-size: 20px; font-weight: bold; float: left; }
 
         #meta { margin-top: 1px; width: 100%; float: right; }
@@ -49,22 +48,21 @@
         #meta td.meta-head { text-align: left; background: #eee; }
         #meta td textarea { width: 100%; height: 20px; text-align: right; }
 
-        #items { clear: both; width: 100%; margin: 30px 0 0 0; border: 1px solid black; }
-        #items th { background: #eee; }
+        #items { clear: both; width: 100%; margin: 30px 0 0 0; border: 0px solid black ; }
+        #items th { background: #eee !important; }
         #items textarea { width: 80px; height: 50px; }
         #items tr.item-row td {  vertical-align: top; }
         #items td.description { width: 300px; }
         #items td.item-name { width: 175px; }
         #items td.description textarea, #items td.item-name textarea { width: 100%; }
-        #items td.total-line { border-right: 0; text-align: right; }
-        #items td.total-value { border-left: 0; padding: 10px; }
-        #items td.total-value textarea { height: 20px; background: none; }
-        #items td.balance { background: #eee; }
-        #items td.blank { border: 0; }
+        #items td.total-line { border-right: 0 !important; text-align: right; }
+        #items td.total-value textarea { height: 20px !important; background: none !important; }
+        #items td.balance { background: #eee !important; }
+        #items td.blank { border: 0 !important; }
 
-        #terms { text-align: center; margin: 20px 0 0 0; }
-        #terms h5 { text-transform: uppercase; font: 13px Helvetica, Sans-Serif; letter-spacing: 10px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
-        #terms textarea { width: 100%; text-align: center;}
+        #terms { text-align: left; margin: 20px 0 0 0; }
+        #terms h5 { text-transform: uppercase; font: 10px Helvetica, Sans-Serif; letter-spacing: 0px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
+        #terms textarea { width: 100%; text-align: left;}
 
 
 
@@ -72,107 +70,31 @@
         .delete { display: block; color: #000; text-decoration: none; position: absolute; background: #EEEEEE; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; left: -22px; font-family: Verdana; font-size: 12px; }
 
         /* Extra CSS for Print Button*/
-        .button {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            overflow: hidden;
-            margin-top: 20px;
-            padding: 12px 12px;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -webkit-transition: all 60ms ease-in-out;
-            transition: all 60ms ease-in-out;
-            text-align: center;
-            white-space: nowrap;
-            text-decoration: none !important;
-
-            color: #fff;
-            border: 0 none;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.3;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-
-            -webkit-box-pack: center;
-            -webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-flex: 0;
-            -webkit-flex: 0 0 160px;
-            -ms-flex: 0 0 160px;
-            flex: 0 0 160px;
-        }
-        .button:hover {
-            -webkit-transition: all 60ms ease;
-            transition: all 60ms ease;
-            opacity: .85;
-        }
-        .button:active {
-            -webkit-transition: all 60ms ease;
-            transition: all 60ms ease;
-            opacity: .75;
-        }
-        .button:focus {
-            outline: 1px dotted #959595;
-            outline-offset: -4px;
-        }
-
-        .button.-regular {
-            color: #202129;
-            background-color: #edeeee;
-        }
-        .button.-regular:hover {
-            color: #202129;
-            background-color: #e1e2e2;
-            opacity: 1;
-        }
-        .button.-regular:active {
-            background-color: #d5d6d6;
-            opacity: 1;
-        }
-
-        .button.-dark {
-            color: #FFFFFF;
-            background: #333030;
-        }
-        .button.-dark:focus {
-            outline: 1px dotted white;
-            outline-offset: -4px;
-        }
-
-        @media print
-        {
-            .no-print, .no-print *
-            {
-                display: none !important;
-            }
+        
+        @page {
+        size: auto;   /* auto is the initial value */
+        margin: 5px;  /* this affects the margin in the printer settings */
+        #items td.total-value textarea { height: auto; background: none; }
+        #items td.balance { background: #eee !important; }
+        #items td.blank { border: 0 !important; }
         }
 
     </style>
 
 </head>
 
-<body>
+<body class="container-fluid mt-5">
 
 <div id="page-wrap">
 
     <table width="100%">
         <tr>
-            <td style="border: 0;  text-align: left" width="62%">
-                <img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" class="w-50" />
-                <br><br>
-                <span style="font-size: 18px; color: #2f4f4f"><strong><?php echo $_L['INVOICE']; ?> # <?php
+            <td style="border: 0;  text-align: left" width="50%" >
+                
+                
+                <span style="font-size: 35px; color: #375AEC"><strong>
+                <?php echo $_L['INVOICE']; ?> 
+                <div hidden><?php
                         if($d['cn'] != ''){
                             $dispid = $d['cn'];
                         }
@@ -180,28 +102,24 @@
                             $dispid = $d['id'];
                         }
                         echo $d['invoicenum'].$dispid;
-                        ?></strong></span>
+                        ?></div></strong></span>
             </td>
-            <td style="border: 0;  text-align: right" width="62%"><div id="logo">
-
-                    <?php echo $config['caddress']; ?>
+            <td style="border: 0;  text-align: right text-size: 8px !important" width="50%"><div id="logo">
+<img id="image" src="<?php echo APP_URL; ?>/application/storage/system/logo.png" alt="logo" class="img-fluid w-50 mb-2" /><br>
+                    <p style="font-size: 12px !important;"><?php echo $config['caddress']; ?></p>
                 </div></td>
         </tr>
 
 
 
     </table>
-
-    <hr>
-    <br>
-
-    <div style="clear:both"></div>
+    
 
     <div id="customer">
 
-        <table id="meta">
+        <table id="meta" class="table table-sm mb-0 mt-0">
             <tr>
-                <td rowspan="5" style="border: 1px solid white; border-right: 1px solid black; text-align: left" width="62%">
+                <td rowspan="5" style="border: 1px !important; border-right: 1px solid black; text-align: left" width="62%">
                     <strong><?php echo $_L['Invoiced To']; ?></strong> <br>
                     <?php if($a['company'] != '') {
                         ?>
@@ -215,10 +133,6 @@
                     <?php
                     }
                     ?>
-
-                    <?php echo $a['address']; ?> <br>
-                    <?php echo $a['city']; ?> <?php echo $a['state']; ?> <?php echo $a['zip']; ?> <br>
-                    <?php echo $a['country']; ?> <br>
                     <?php
                     if(($a['phone']) != ''){
                         echo 'Phone: '. $a['phone']. ' <br>';
@@ -251,28 +165,27 @@
                 <td><?php echo date($config['df'], strtotime($d['duedate'])); ?></td>
             </tr>
 
-            <tr>
+           <!-- <tr>
 
                 <td class="meta-head"><?php echo $_L['Amount Due']; ?></td>
                 <td><div class="due"><?php echo ib_money_format($i_due,$config,$d['currency_symbol']) ?></div></td>
-            </tr>
+            </tr>-->
 
         </table>
 
     </div>
 
-    <table id="items">
+    <table id="items" class="table table-sm table-bordered">
 
-        <tr>
+    <thead class="thead-light"> 
+        <tr class="bg-primary">
             <th width="65%"><?php echo $_L['Item']; ?></th>
             <th align="right"><?php echo $_L['Price']; ?></th>
             <th align="right"><?php echo $_L['Qty']; ?></th>
             <th align="right"><?php echo $_L['Total']; ?></th>
 
         </tr>
-
-
-
+</thead>
         <?php
 
         foreach ($items as $item){
@@ -349,8 +262,8 @@
             ?>
             <tr>
                 <td class="blank"> </td>
-                <td colspan="2" class="total-line balance"><?php echo $_L['Grand Total']; ?></td>
-                <td class="total-value balance"><div class="due"><?php echo ib_money_format($d['total'],$config,$d['currency_symbol']); ?></div></td>
+                <td colspan="2" class="total-line balance"><b><h6><?php echo $_L['Grand Total']; ?></h6></b></td>
+                <td class="total-value balance"><div class="due"><h6><strong><?php echo ib_money_format($d['total'],$config,$d['currency_symbol']); ?></strong></h6></div></td>
             </tr>
         <?php
         }
@@ -411,9 +324,27 @@
     <?php
     }
     ?>
+    
+    <div id="terms" class="table-borderless">
+        <h5>Metodos de pago.</h5>
+        <div>
+            <table class="table table-bordeless">
+                <tr>
+                    <td><p style="font-size: 12px !important"><b>Banesco Panamá</b><br>
+            Ahorros # 201001963028<br>
+            Eduardo Betancourt</p></td>
+                    <td><p style="font-size: 12px !important"><b>BAC Credomatic</b><br>
+            Ahorros # 112612221
+<br>
+            Eduardo Betancourt</p></td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
 
 
-    <button class='button -dark center no-print'  onClick="window.print();">Click Here to Print</button>
+    <button class='btn btn-primary d-print-none'  onClick="window.print();">Imprimir Factura</button>
 </div>
 
 </body>
