@@ -17340,11 +17340,10 @@ body.skin-1 {
 .navbar-default .nav:before {
     content: '';
     position: absolute;
-    left: 26px;
     top: 0;
     bottom: 0;
     width: 2px;
-    background: #2A2D4F
+    background: #fff;
 }
 
 body.boxed-layout #wrapper {
