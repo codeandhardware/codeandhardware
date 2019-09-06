@@ -1247,4 +1247,6 @@ html,
             width: 250px !important;
         }
 
-        
+        .navbar-toggler {
+            padding: .0rem .0rem !important;
+        }
