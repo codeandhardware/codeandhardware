@@ -1243,3 +1243,6 @@ html,
                 margin-top: 8px;
             }
         }
+        .logosize {
+            width: 250px !important;
+        }
