@@ -293,6 +293,9 @@ html,
             -ms-flex-pack: end;
             justify-content: flex-end;
             width: 100%;
+            text-decoration: none !important;
+            
+
         }
 
         .links.jsx-913014550 a.jsx-913014550 {
@@ -347,6 +350,7 @@ html,
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             z-index: 2;
             -webkit-backdrop-filter: blur(5px);
+            padding: 10px !important;
         }
 
         header.jsx-1514039752 .contentContainer.jsx-1514039752 {
