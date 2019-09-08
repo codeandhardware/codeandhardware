@@ -746,7 +746,6 @@ html,
 
         #splash.jsx-2145280428 .imageContainer.jsx-2145280428 {
             position: relative;
-            margin-top: 108px;
             width: 115%;
             max-width: 80vw;
         }
@@ -754,15 +753,11 @@ html,
         #splash.jsx-2145280428 img.jsx-2145280428 {
             width: 100%;
             height: auto;
-            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.14);
         }
 
         #splash.jsx-2145280428 .imageContainer.jsx-2145280428 .gradient.jsx-2145280428 {
             position: absolute;
-            left: 0;
             top: 10px;
-            right: 0;
-            bottom: 0;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(22, 22, 26, 1) 100%);
         }
 
