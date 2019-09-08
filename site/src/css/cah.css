@@ -342,7 +342,7 @@ html,
             -webkit-flex-direction: column;
             -ms-flex-direction: column;
             flex-direction: column;
-            background-color: rgba(22, 22, 26, 0.85);
+            background-color: rgba(22, 22, 26, 0.90);
             position: fixed;
             top: 0;
             left: 0;
@@ -770,7 +770,7 @@ html,
         }
 
         h2.jsx-2145280428 {
-            font-size: 32px;
+            font-size: 25px;
             font-weight: bold;
             margin: 0 0 10px 0;
         }
