@@ -36,6 +36,10 @@ set_error_handler(function($code, $message, $file, $line) use($log, $config) {
 		default:
 			$error = 'Unknown';
 			break;
+			//Unlimited colors theme
+require_once(DIR_SYSTEM . 'library/themeoptions.php');
+$theme_options = new ThemeOptions();
+$registry->set('theme_options', $theme_options);
 	}
 
 	if ($config->get('error_display')) {
