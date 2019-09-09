@@ -9,6 +9,13 @@ class ControllerProductManufacturer extends Controller {
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
+		$data['heading_title'] = $this->language->get('heading_title');
+
+		$data['text_index'] = $this->language->get('text_index');
+		$data['text_empty'] = $this->language->get('text_empty');
+
+		$data['button_continue'] = $this->language->get('button_continue');
+
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -90,7 +97,7 @@ class ControllerProductManufacturer extends Controller {
 		if (isset($this->request->get['limit'])) {
 			$limit = (int)$this->request->get['limit'];
 		} else {
-			$limit = (int)$this->config->get('theme_' . $this->config->get('config_theme') . '_product_limit');
+			$limit = (int)$this->config->get($this->config->get('config_theme') . '_product_limit');
 		}
 
 		$data['breadcrumbs'] = array();
@@ -135,7 +142,24 @@ class ControllerProductManufacturer extends Controller {
 
 			$data['heading_title'] = $manufacturer_info['name'];
 
+			$data['text_empty'] = $this->language->get('text_empty');
+			$data['text_quantity'] = $this->language->get('text_quantity');
+			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
+			$data['text_model'] = $this->language->get('text_model');
+			$data['text_price'] = $this->language->get('text_price');
+			$data['text_tax'] = $this->language->get('text_tax');
+			$data['text_points'] = $this->language->get('text_points');
 			$data['text_compare'] = sprintf($this->language->get('text_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0));
+			$data['text_sort'] = $this->language->get('text_sort');
+			$data['text_limit'] = $this->language->get('text_limit');
+
+			$data['button_cart'] = $this->language->get('button_cart');
+			$data['button_wishlist'] = $this->language->get('button_wishlist');
+			$data['button_compare'] = $this->language->get('button_compare');
+			$data['button_continue'] = $this->language->get('button_continue');
+			$data['button_list'] = $this->language->get('button_list');
+			$data['button_grid'] = $this->language->get('button_grid');
+			$data['quick_view'] = $this->language->get('quick_view');
 
 			$data['compare'] = $this->url->link('product/compare');
 
@@ -155,10 +179,23 @@ class ControllerProductManufacturer extends Controller {
 
 			foreach ($results as $result) {
 				if ($result['image']) {
-					$image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+					$image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
 				} else {
-					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
 				}
+				
+				//added for image swap
+				
+					$images = $this->model_catalog_product->getProductImages($result['product_id']);
+	
+					if(isset($images[0]['image']) && !empty($images)){
+					 $images = $images[0]['image'];
+				    }else
+				    {
+				     $images = $image;
+				    }
+						
+				//
 
 				if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
 					$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
@@ -167,7 +204,7 @@ class ControllerProductManufacturer extends Controller {
 				}
 
 				if ((float)$result['special']) {
-					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);	
 				} else {
 					$special = false;
 				}
@@ -187,13 +224,16 @@ class ControllerProductManufacturer extends Controller {
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
+					'thumb_swap'  => $this->model_tool_image->resize($images, $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height')),
 					'name'        => $result['name'],
-					'description' => utf8_substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length')) . '..',
+					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get($this->config->get('config_theme') . '_product_description_length')) . '..',
 					'price'       => $price,
 					'special'     => $special,
+					'percentsaving' 	 => round((($result['price'] - $result['special'])/$result['price'])*100, 0),
 					'tax'         => $tax,
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],
+					'quick'        => $this->url->link('product/quick_view','&product_id=' . $result['product_id']),
 					'href'        => $this->url->link('product/product', 'manufacturer_id=' . $result['manufacturer_id'] . '&product_id=' . $result['product_id'] . $url)
 				);
 			}
@@ -274,7 +314,7 @@ class ControllerProductManufacturer extends Controller {
 
 			$data['limits'] = array();
 
-			$limits = array_unique(array($this->config->get('theme_' . $this->config->get('config_theme') . '_product_limit'), 25, 50, 75, 100));
+			$limits = array_unique(array($this->config->get($this->config->get('config_theme') . '_product_limit'), 25, 50, 75, 100));
 
 			sort($limits);
 
@@ -313,12 +353,10 @@ class ControllerProductManufacturer extends Controller {
 			// http://googlewebmastercentral.blogspot.com/2011/09/pagination-with-relnext-and-relprev.html
 			if ($page == 1) {
 			    $this->document->addLink($this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'], true), 'canonical');
+			} elseif ($page == 2) {
+			    $this->document->addLink($this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'], true), 'prev');
 			} else {
-				$this->document->addLink($this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . $url . '&page='. $page, true), 'canonical');
-			}
-			
-			if ($page > 1) {
-			    $this->document->addLink($this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . $url . '&page='. (($page - 2) ? '&page='. ($page - 1) : ''), true), 'prev');
+			    $this->document->addLink($this->url->link('product/manufacturer/info', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . $url . '&page='. ($page - 1), true), 'prev');
 			}
 
 			if ($limit && ceil($product_total / $limit) > $page) {
@@ -372,6 +410,8 @@ class ControllerProductManufacturer extends Controller {
 			$data['heading_title'] = $this->language->get('text_error');
 
 			$data['text_error'] = $this->language->get('text_error');
+
+			$data['button_continue'] = $this->language->get('button_continue');
 
 			$data['continue'] = $this->url->link('common/home');
 

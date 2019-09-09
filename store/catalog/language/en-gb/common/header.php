@@ -14,3 +14,7 @@ $_['text_logout']        = 'Logout';
 $_['text_checkout']      = 'Checkout';
 $_['text_search']        = 'Search';
 $_['text_all']           = 'Show All';
+$_['text_blog']          = 'Blogs';
+$_['heading_title']      = 'Categories';
+$_['text_callus']        = 'Contact Us:';
+$_['text_manufacturer'] = 'Brands';

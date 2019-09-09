@@ -2,13 +2,13 @@
 // Text
 $_['text_search']              = 'Search';
 $_['text_brand']               = 'Brand';
-$_['text_manufacturer']        = 'Brand:';
-$_['text_model']               = 'Product Code:';
-$_['text_reward']              = 'Reward Points:';
-$_['text_points']              = 'Price in reward points:';
-$_['text_stock']               = 'Availability:';
+$_['text_manufacturer']        = 'Brand :';
+$_['text_model']               = 'Product Code :';
+$_['text_reward']              = 'Reward Points :';
+$_['text_points']              = 'Price in reward points :';
+$_['text_stock']               = 'Availability :';
 $_['text_instock']             = 'In Stock';
-$_['text_tax']                 = 'Ex Tax:';
+$_['text_tax']                 = 'Ex Tax :';
 $_['text_discount']            = ' or more ';
 $_['text_option']              = 'Available Options';
 $_['text_minimum']             = 'This product has a minimum quantity of %s';
@@ -19,7 +19,7 @@ $_['text_no_reviews']          = 'There are no reviews for this product.';
 $_['text_note']                = '<span class="text-danger">Note:</span> HTML is not translated!';
 $_['text_success']             = 'Thank you for your review. It has been submitted to the webmaster for approval.';
 $_['text_related']             = 'Related Products';
-$_['text_tags']                = 'Tags:';
+$_['text_tags']                = 'Tags :';
 $_['text_error']               = 'Product not found!';
 $_['text_payment_recurring']   = 'Payment Profile';
 $_['text_trial_description']   = '%s every %d %s(s) for %d payment(s) then';
