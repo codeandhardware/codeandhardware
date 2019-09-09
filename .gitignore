@@ -1,3 +1,5 @@
 /app/application/config.php
 /app/ui/compiled/
+/store/config.php
+/store/admin/config.php
 .vscode/
