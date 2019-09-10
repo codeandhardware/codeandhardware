@@ -26,7 +26,7 @@
 {block name='block_social'}
   <div class="block-social col-lg-12 col-md-12 col-sm-12">
     <div class="row">
-      <h3 class="h3 hidden-sm-down">Nuestras Redes</h3>
+      <h3 class="h3 hidden-sm-down">Nuestras Redes Sociales</h3>
       <ul>
         {foreach from=$social_links item='social_link'}
           <li class="{$social_link.class}"><a href="{$social_link.url}" target="_blank">{$social_link.label}</a></li>

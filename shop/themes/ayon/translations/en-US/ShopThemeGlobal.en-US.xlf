@@ -205,8 +205,8 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_imagesli
   <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
     <body>
       <trans-unit id="f502a2d8e69396003efbba0800c545b5">
-        <source>Subscribe To Our News and Sales</source>
-        <target>Subscribe To Our News and Sales</target>
+        <source>Subscribe To Our News and Sales.</source>
+        <target>Subscribe To Our News and Sales.</target>
         <note>Context:
 File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl:28</note>
       </trans-unit>
