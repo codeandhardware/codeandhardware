@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/_partials/acc.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="08bd40c7543007ad06e4fce31618f6ec">
+        <source>Account</source>
+        <target>Account</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/_partials/acc.tpl:14</note>
+      </trans-unit>
+      <trans-unit id="6ab18d863a36882a13ea34af7a3aa95e">
+        <source>Open My Account</source>
+        <target>Open My Account</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/_partials/acc.tpl:19</note>
+      </trans-unit>
+      <trans-unit id="9d1a89751378d26eaefd67eda0871986">
+        <source>Login / Sign up</source>
+        <target>Login / Sign up</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/_partials/acc.tpl:21</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/_partials/menu.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="b61541208db7fa7dba42c85224405911">
+        <source>Menu</source>
+        <target>Menu</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/_partials/menu.tpl:10</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="e807d3ccf8d24c8c1a3d86db5da78da8">
+        <source>Days</source>
+        <target>Days</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+      </trans-unit>
+      <trans-unit id="6a7e73161603d87b26a8eac49dab0a9c">
+        <source>Hours</source>
+        <target>Hours</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+      </trans-unit>
+      <trans-unit id="46ad903d8a42736510c592c944c28136">
+        <source>Limited Special Offer! Expires in:</source>
+        <target>Limited Special Offer! Expires in:</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:117</note>
+      </trans-unit>
+      <trans-unit id="f670ea66cfb0e90bd6090472ad692694">
+        <source>Minutes</source>
+        <target>Minutes</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+      </trans-unit>
+      <trans-unit id="8f19a8c7566af54ea8981029730e5465">
+        <source>Seconds</source>
+        <target>Seconds</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/miniatures/product.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="64ec4942ef3d579aecd73175e8ff1885">
+        <source>Mins</source>
+        <target>Mins</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/miniatures/product.tpl:186</note>
+      </trans-unit>
+      <trans-unit id="aa75f86227386200b4f644b6e4d456c0">
+        <source>Secs</source>
+        <target>Secs</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/miniatures/product.tpl:186</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="e25a0ee48142b8e302b48c59cb33ece4">
+        <source><![CDATA[printf('%s',$_smarty_tpl->tpl_vars['nbComments']->value]]></source>
+        <target><![CDATA[printf('%s',$_smarty_tpl->tpl_vars['nbComments']->value]]></target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:99</note>
+      </trans-unit>
+      <trans-unit id="457dd55184faedb7885afd4009d70163">
+        <source>Review</source>
+        <target>Review</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:99</note>
+      </trans-unit>
+      <trans-unit id="34e80a799d144cfe4af46815e103f017">
+        <source>Reviews</source>
+        <target>Reviews</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:99</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/left-column.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="be8df1f28c0abc85a0ed0c6860e5d832">
+        <source>Blog</source>
+        <target>Blog</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/left-column.tpl:26</note>
+      </trans-unit>
+      <trans-unit id="01d645c1c180eba4d15dd4438e712cd9">
+        <source>Link to</source>
+        <target>Link to</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/left-column.tpl:34</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments_reviews.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="f686baf0c5afd50aa39a24dd13136b40">
+        <source><![CDATA[printf('%s Review(s)',$_smarty_tpl->tpl_vars['nbComments']->value]]></source>
+        <target><![CDATA[printf('%s Review(s)',$_smarty_tpl->tpl_vars['nbComments']->value]]></target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments_reviews.tpl:40</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/form/form.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="b9aefa40a54680bb258f9f9569290fae">
+        <source>Product Name</source>
+        <target>Product Name</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/form/form.tpl:37</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="0bcef9c45bd8a48eda1b26eb0c61c869">
+        <source>%</source>
+        <target>%</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:103</note>
+      </trans-unit>
+      <trans-unit id="25d8df6e580905091a0d5ef5b9e05bf0">
+        <source>Reply</source>
+        <target>Reply</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:208</note>
+      </trans-unit>
+      <trans-unit id="f89c6332f4e5ec07aae8159ea25848d6">
+        <source>Save reply</source>
+        <target>Save reply</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:231</note>
+      </trans-unit>
+      <trans-unit id="b61202ecc79f2d20a6223889e1bf7692">
+        <source>Add reply</source>
+        <target>Add reply</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:231</note>
+      </trans-unit>
+      <trans-unit id="087fb8756d4add87f2d162304ccd486b">
+        <source>No records found</source>
+        <target>No records found</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:245</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="ab51a81c76d95ddc762194d58ec5db63">
+        <source>Are you sure that you want to report this comment?</source>
+        <target>Are you sure that you want to report this comment?</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:31</note>
+      </trans-unit>
+      <trans-unit id="9a2ccd41653469a8bd94fbb84b271a14">
+        <source>Your comment has been added!</source>
+        <target>Your comment has been added!</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:34</note>
+      </trans-unit>
+      <trans-unit id="b20968d9aecd2d075519992e9e2f1ffe">
+        <source>Your comment has been submitted and will be available once approved by a moderator.</source>
+        <target>Your comment has been submitted and will be available once approved by a moderator.</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:35</note>
+      </trans-unit>
+      <trans-unit id="e0aa021e21dddbd6d8cecec71e9cf564">
+        <source>OK</source>
+        <target>OK</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:37</note>
+      </trans-unit>
+      <trans-unit id="7966126831926ad29c528b239d69f855">
+        <source>Write your review</source>
+        <target>Write your review</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:114</note>
+      </trans-unit>
+      <trans-unit id="b5c82723bd85856358f9a376bc613998">
+        <source>%1$d out of %2$d people found this review useful.</source>
+        <target>%1$d out of %2$d people found this review useful.</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:78</note>
+      </trans-unit>
+      <trans-unit id="39630ad6ee79b8653ea89194cdb45bec">
+        <source>Was this comment useful to you?</source>
+        <target>Was this comment useful to you?</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:82</note>
+      </trans-unit>
+      <trans-unit id="a6105c0a611b41b08f1209506350279e">
+        <source>yes</source>
+        <target>yes</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:83</note>
+      </trans-unit>
+      <trans-unit id="7fa3b767c460b54a2be4d49030b349c7">
+        <source>no</source>
+        <target>no</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:84</note>
+      </trans-unit>
+      <trans-unit id="28b3b1e564a00f572c5d4e21da986d49">
+        <source>Report abuse</source>
+        <target>Report abuse</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:88</note>
+      </trans-unit>
+      <trans-unit id="fbe2625bf3673be380d043a4bf873f28">
+        <source>Be the first to write your review</source>
+        <target>Be the first to write your review</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:100</note>
+      </trans-unit>
+      <trans-unit id="08c7d6f84301ee7d0aab0a5f67edc419">
+        <source>No customer reviews for the moment.</source>
+        <target>No customer reviews for the moment.</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:103</note>
+      </trans-unit>
+      <trans-unit id="45dacce3e2bc0f7bebde95098b9326a8">
+        <source>Title for your review</source>
+        <target>Title for your review</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:136</note>
+      </trans-unit>
+      <trans-unit id="3421ad00975533fbbd5f17d2cb568125">
+        <source>Your review</source>
+        <target>Your review</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:139</note>
+      </trans-unit>
+      <trans-unit id="70397c4b252a5168c5ec003931cea215">
+        <source>Required fields</source>
+        <target>Required fields</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:149</note>
+      </trans-unit>
+      <trans-unit id="04c3a66c24f289b415ea9aedc6b95547">
+        <source>I accept </source>
+        <target>I accept </target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:155</note>
+      </trans-unit>
+      <trans-unit id="ca0f9a86ca33f1d6baa9051bd7f4ed21">
+        <source>privacy policy</source>
+        <target>privacy policy</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:155</note>
+      </trans-unit>
+      <trans-unit id="a4f86f7bfc24194b276c22e0ef158197">
+        <source>rules</source>
+        <target>rules</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:155</note>
+      </trans-unit>
+      <trans-unit id="94966d90747b97d1f0f206c98a8b1ac3">
+        <source>Send</source>
+        <target>Send</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:158</note>
+      </trans-unit>
+      <trans-unit id="e81c4e4f2b7b93b481e13a8553c2ae1b">
+        <source>or</source>
+        <target>or</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:159</note>
+      </trans-unit>
+      <trans-unit id="ea4788705e6873b424c65e91c2846b19">
+        <source>Cancel</source>
+        <target>Cancel</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/productcomments.tpl:159</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/form.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="186c30cab59f6b64a453778330d4bbf0">
+        <source>New comment</source>
+        <target>New comment</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/form.tpl:27</note>
+      </trans-unit>
+      <trans-unit id="221e705c06e231636fdbccfdd14f4d5c">
+        <source>Your name</source>
+        <target>Your name</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/form.tpl:31</note>
+      </trans-unit>
+      <trans-unit id="ef6703d6c606526cece4a9eda9d49045">
+        <source>Your comment</source>
+        <target>Your comment</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/form.tpl:39</note>
+      </trans-unit>
+      <trans-unit id="b23ba156154d37947f632aca8fb4f032">
+        <source>Add new comment</source>
+        <target>Add new comment</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/form.tpl:55</note>
+      </trans-unit>
+      <trans-unit id="83f072670ce7d8a17801e5dfbba79f4b">
+        <source>Only registered and logged customers can add comments</source>
+        <target>Only registered and logged customers can add comments</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/form.tpl:61</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="c91e4ee170226d66e90f99ba917e4c20">
+        <source>Quick view</source>
+        <target>Quick view</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:63</note>
+      </trans-unit>
+      <trans-unit id="2d0f6b8300be19cf35e89e66f0677f95">
+        <source>Add to cart</source>
+        <target>Add to cart</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:152</note>
+      </trans-unit>
+      <trans-unit id="03c2e7e41ffc181a4e84080b4710e81e">
+        <source>New</source>
+        <target>New</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:99</note>
+      </trans-unit>
+      <trans-unit id="bb63f16d5ebfcfa8a651642a7bb2ea5c">
+        <source>Sale!</source>
+        <target>Sale!</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:104</note>
+      </trans-unit>
+      <trans-unit id="03de921a8ea82897e13d33d66c28b4db">
+        <source>Online only</source>
+        <target>Online only</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:166</note>
+      </trans-unit>
+      <trans-unit id="ca2bf12169883f4982d8fe34b7e3c618">
+        <source>Reduced price!</source>
+        <target>Reduced price!</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:171</note>
+      </trans-unit>
+      <trans-unit id="69d08bd5f8cf4e228930935c3f13e42f">
+        <source>In Stock</source>
+        <target>In Stock</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:179</note>
+      </trans-unit>
+      <trans-unit id="b55197a49e8c4cd8c314bc2aa39d6feb">
+        <source>Out of stock</source>
+        <target>Out of stock</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:187</note>
+      </trans-unit>
+      <trans-unit id="cb3c718c905f00adbb6735f55bfb38ef">
+        <source>Product available with different options</source>
+        <target>Product available with different options</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:183</note>
+      </trans-unit>
+      <trans-unit id="4351cfebe4b61d8aa5efa1d020710005">
+        <source>View</source>
+        <target>View</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:156</note>
+      </trans-unit>
+      <trans-unit id="63a78ed4647f7c63c2929e35ec1c95e3">
+        <source>Customize</source>
+        <target>Customize</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:157</note>
+      </trans-unit>
+      <trans-unit id="d3da97e2d9aee5c8fbe03156ad051c99">
+        <source>More</source>
+        <target>More</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/product-list.tpl:157</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ets_megamenu/views/templates/hook/product-list.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="216adaf4e98dc62ec3abeab51b9fc57f">
+        <source>Please select at least one product</source>
+        <target>Please select at least one product</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ets_megamenu/views/templates/hook/product-list.tpl:153</note>
+      </trans-unit>
+      <trans-unit id="90723749917a82bf3ff8a73247d32ffb">
+        <source>You cannot add more than %d product(s) to the product comparison</source>
+        <target>You cannot add more than %d product(s) to the product comparison</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ets_megamenu/views/templates/hook/product-list.tpl:154</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/front/pk_favorites-account.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="70f90aa4f9df6f5fc4c69754c6d81ff7">
+        <source>No favorite products have been determined just yet</source>
+        <target>No favorite products have been determined just yet</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/front/pk_favorites-account.tpl:20</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/my-account.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="d78986947356ddd37b43d57df289dee9">
+        <source>Favorites</source>
+        <target>Favorites</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/my-account.tpl:3</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/pk_favorites-extra.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="910885435dbc44a22b68cb45c79e4a7e">
+        <source>Add to favorites</source>
+        <target>Add to favorites</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/pk_favorites-extra.tpl:30</note>
+      </trans-unit>
+      <trans-unit id="7188286e36fc6c1892dd53aaa54237fb">
+        <source>Remove from favorites</source>
+        <target>Remove from favorites</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/pk_favorites-extra.tpl:16</note>
+      </trans-unit>
+      <trans-unit id="30ad9b73862f1bcd2336787f54e105ee">
+        <source>You have to login to add product to Favorites</source>
+        <target>You have to login to add product to Favorites</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/pk_favorites-extra.tpl:20</note>
+      </trans-unit>
+      <trans-unit id="fc33e3b6b0b6cb0cac9b5ef2f14c89a4">
+        <source>You must be logged in</source>
+        <target>You must be logged in</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/pk_favorites-extra.tpl:50</note>
+      </trans-unit>
+      <trans-unit id="538c8d1cf1d6bf31ed2db0f62c68b812">
+        <source>This product is in your Favorites</source>
+        <target>This product is in your Favorites</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/pk_favorites/views/templates/hook/pk_favorites-extra.tpl:56</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/_partials/post-single-related-products.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="38070661d5ad384d9c7d21895dc4e784">
+        <source>Related products</source>
+        <target>Related products</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/_partials/post-single-related-products.tpl:2</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/pagination.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="dd1f775e443ff3b9a89270713580a51b">
+        <source>Previous</source>
+        <target>Previous</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/pagination.tpl:13</note>
+      </trans-unit>
+      <trans-unit id="10ac3d04253ef7e1ddc73e6091c0cd55">
+        <source>Next</source>
+        <target>Next</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/pagination.tpl:48</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/authors.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="5d251b3d39f0472a0f8693de6e0882e8">
+        <source>Back to blog homepage</source>
+        <target>Back to blog homepage</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/authors.tpl:26</note>
+      </trans-unit>
+      <trans-unit id="02684cc6b6ea1811a064f475a5fd1d18">
+        <source>Authors</source>
+        <target>Authors</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/authors.tpl:33</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/facebook.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="8413c683b4b27cc3f4dbd4c90329d8ba">
+        <source>Comments</source>
+        <target>Comments</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/facebook.tpl:26</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/comments/layout.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="24ad95557100e42e28ea73335e4e8ad1">
+        <source>Posted by</source>
+        <target>Posted by</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/comments/layout.tpl:34</note>
+      </trans-unit>
+      <trans-unit id="ed2b5c0139cec8ad2873829dc1117d50">
+        <source>on</source>
+        <target>on</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/comments/layout.tpl:34</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/layout.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="2b888c068d703c360131f51314556c39">
+        <source>No comments at this moment</source>
+        <target>No comments at this moment</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/comments/layout.tpl:43</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/single.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="878d055f868737d1c1fbe696334e6581">
+        <source>Visit category</source>
+        <target>Visit category</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/single.tpl:39</note>
+      </trans-unit>
+      <trans-unit id="6f685fd662627e2f1b306cc897555d08">
+        <source>Your comment was sucessfully added.</source>
+        <target>Your comment was sucessfully added.</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/single.tpl:54</note>
+      </trans-unit>
+      <trans-unit id="e639909c9b5ffa8b742d1c78379e7972">
+        <source>Your comment was sucessfully added but it will be visible after moderator approval.</source>
+        <target>Your comment was sucessfully added but it will be visible after moderator approval.</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/single.tpl:56</note>
+      </trans-unit>
+      <trans-unit id="32b502f33a535f75dcbf63f6753c631e">
+        <source>Tags:</source>
+        <target>Tags:</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/single.tpl:88</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="cc71d8f3dc8842c0f4f55e3f5b388ec6">
+        <source>likes</source>
+        <target>likes</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl:110</note>
+      </trans-unit>
+      <trans-unit id="59a14a5786fe7a105d780bb1e1e2b21b">
+        <source>views</source>
+        <target>views</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl:119</note>
+      </trans-unit>
+      <trans-unit id="a5d491060952aa8ad5fdee071be752de">
+        <source>comments</source>
+        <target>comments</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl:127</note>
+      </trans-unit>
+      <trans-unit id="177fb19868f26b16ec76fa8416aaeee1">
+        <source>View full</source>
+        <target>View full</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl:145</note>
+      </trans-unit>
+      <trans-unit id="8de4aa207531f5f6da407387e1e5c27c">
+        <source>Previous article</source>
+        <target>Previous article</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl:162</note>
+      </trans-unit>
+      <trans-unit id="8f8d2783d036ec8dbe4b6b9c1d0fed0d">
+        <source>Main page</source>
+        <target>Main page</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl:165</note>
+      </trans-unit>
+      <trans-unit id="33a1d8dcdb78887ccfcd41d7fac0fa65">
+        <source>Next article</source>
+        <target>Next article</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/single.tpl:168</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/list.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="0746618781a2a85b5edf43bd3817064b">
+        <source>Permalink to</source>
+        <target>Permalink to</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/list.tpl:116</note>
+      </trans-unit>
+      <trans-unit id="061fcdd72d275db7234f4d3a03e3f23c">
+        <source>There are no posts</source>
+        <target>There are no posts</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/list.tpl:191</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/_partials/type-default/post-bottomline.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="43340e6cc4e88197d57f8d6d5ea50a46">
+        <source>Read more</source>
+        <target>Read more</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/1.7/_partials/type-default/post-bottomline.tpl:5</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/after-post-content.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="319cf17b95b30222314383bb72d608c2">
+        <source>Share this post</source>
+        <target>Share this post</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/after-post-content.tpl:3</note>
+      </trans-unit>
+      <trans-unit id="3746d4aa96f19672260a424d76729dd1">
+        <source>Tweet</source>
+        <target>Tweet</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/after-post-content.tpl:7</note>
+      </trans-unit>
+      <trans-unit id="5a95a425f74314a96f13a2f136992178">
+        <source>Share</source>
+        <target>Share</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/after-post-content.tpl:10</note>
+      </trans-unit>
+      <trans-unit id="5b2c8bfd1bc974966209b7be1cb51a72">
+        <source>Google+</source>
+        <target>Google+</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/after-post-content.tpl:13</note>
+      </trans-unit>
+      <trans-unit id="86709a608bd914b28221164e6680ebf7">
+        <source>Pinterest</source>
+        <target>Pinterest</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/hook/after-post-content.tpl:16</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/types/url/thumbnail.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="33e453eb46fba825838ad6c84ddc8e4d">
+        <source>External link to</source>
+        <target>External link to</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/types/url/thumbnail.tpl:27</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/types/url/description.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="5e706a9b7eb9b142a619e4331d6976e6">
+        <source>Visit</source>
+        <target>Visit</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/types/url/description.tpl:32</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/types/gallery/thumbnail.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="2a4fbc721840a8d4096a0225e85700f6">
+        <source>Permalink link to</source>
+        <target>Permalink link to</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ph_simpleblog/views/templates/front/types/gallery/thumbnail.tpl:27</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

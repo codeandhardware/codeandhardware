@@ -1,0 +1,73 @@
+.search-widget {
+  @include search-box;
+}
+.header-top {
+  .search-widget {
+    form {
+      input[type="text"] {
+        height: 54px;
+        min-width: inherit;
+        width: 100%;
+        min-width:240px;
+        padding: 0.5rem 2rem 0.5rem 1.25rem;
+        background: none;
+        &:focus {
+          padding-left: 1.5rem;
+          padding-right: 2.5rem;
+          box-shadow: 0 14px 40px 0px rgba(0, 0, 0, 0.11);
+        }
+      }
+      button[type=submit] {
+        outline: none!important;
+        .search svg {
+          width:28px;
+        }
+      }
+    }
+  }
+}
+#checkout {
+  #search_widget {
+    display: none; /* Not ideal solution by allows to reuse same hooks/templates */
+  }
+}
+
+#pagenotfound {
+  .page-content {
+    #search_widget {
+      width: 100%;
+    }
+  }
+}
+
+.page-not-found {
+  .search-widget {
+    form {
+      display: inline-block;
+    }
+  }
+}
+
+.layout-full-width.page-search {
+  h2 {
+    margin-top:22px;
+    text-align: center;
+  }
+}
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+  .header-top {
+    .search-widget {
+      float: none;
+      padding: 0 0.9375rem;
+      form {
+        margin: 0 auto;
+        input[type="text"] {
+          min-width: inherit;
+          background: white;
+        }
+      }
+    }
+  }
+}

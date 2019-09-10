@@ -1,0 +1,386 @@
+/*** SOME GENERIC STYLES ***/
+@mixin customer-area-base-box {
+  padding: 2rem;
+}
+@mixin customer-area-box {
+  @include customer-area-base-box;
+  font-size: $font-size-sm;
+}
+#my-account #main p a {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.table-labeled {
+  th {
+    vertical-align: middle;
+  }
+  td {
+    vertical-align: middle;
+  }
+  .label {
+    font-weight: 400;
+    border-radius: 3px;
+    font-size: inherit;
+    padding: 0.25rem 0.375rem;
+    margin: 0.125rem;
+    white-space: nowrap;
+  }
+}
+.page-order {
+  .table {
+    margin-bottom: 0;
+  }
+  table {
+    th {
+      padding: 0.5rem;
+    }
+    td {
+      padding: 0.5rem;
+    }
+    thead {
+      th {
+        text-align: center;
+      }
+    }
+  }
+}
+#authentication {
+  .tooltip.tooltip-bottom {
+    padding: 0;
+    margin: 0;
+  }
+  .custom-checkbox {
+    display: flex;
+    span {
+      flex: 0 0 1.25rem;
+    }
+    label {
+      padding-left: 0.625rem;
+    }
+  }
+}
+#identity,
+#authentication {
+  .radio-inline {
+    padding: 0;
+    margin-right:1.25rem;
+    .custom-radio {
+    }
+  }
+  .logininstead {
+    padding: 40px 60px;
+    border: 2px solid;
+    text-align: center;
+    margin-top: 60px;
+    a {
+      margin-left:14px;
+    }
+  }
+}
+/*** Most of the customer accpunt pages ***/
+.page-customer-account {
+  #content {
+    .order-actions {
+      a {
+        padding: 0 0.125rem;
+      }
+    }
+    .forgot-password {
+      text-align: right;
+      font-size: 14px;
+      margin-top: -24px;
+      padding-bottom: 40px;
+    }
+  }
+}
+/*** Login page ***/
+.page-authentication {
+  #content {
+    @include customer-area-base-box;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+/*** Addresses page ***/
+.page-addresses {
+  .address {
+    border:2px solid;
+    @include trans-fast;
+    &:hover {
+      box-shadow: 0 10px 40px 0px rgba(0, 0, 0, 0.09);
+    }
+    margin-bottom: 2rem;
+    .address-body {
+      padding: 3rem 3.5rem;
+      h4 {
+        font-weight: 600;
+      }
+    }
+    .address-footer {
+      border-top: 2px solid;
+      padding: 1.25rem 3.5rem;
+      display: flex;
+      align-items: center;
+      a {
+        margin-right: 18px;
+        font-size:14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        i {
+          width:18px;
+          height:18px;
+          display: inline-block;
+          margin-right:6px;
+          svg {
+            width:18px;
+            height:18px;
+          }
+        }
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .addresses-footer {
+    margin: 0 0.9375rem;
+    a {
+      i {
+        font-size: $base-font-size;
+      }
+      span {
+        font-size: $base-font-size;
+        vertical-align: middle;
+        margin-top: $small-space;
+      }
+    }
+  }
+}
+#main .myacc_content .page-header {
+  margin-bottom:64px;
+}
+/*** Order details page ***/
+.page-order-detail {
+  font-size: 0.875rem;
+  .box {
+    padding:0 0 60px;
+    margin-bottom: 60px;
+  }
+  #main .page-content ul {
+    margin:0;
+  }
+  h3 {
+    font-size: $base-font-size;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  #order-infos {
+    ul {
+      margin: 0;
+    }
+  }
+  #order-history {
+    .history-lines {
+      .history-line {
+        padding: 0.5rem 0;
+        &:last-child {
+          border-bottom: 0;
+        }
+        .label {
+          display: inline-block;
+          margin: 0.25rem 0;
+          padding: 0.25rem 0.375rem;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .addresses {
+    margin: 0 -0.9375rem;
+    h4 {
+      font-size: $base-font-size;
+      font-weight: 700;
+    }
+  }
+  #order-products {
+    &.return {
+      margin-bottom: 1rem;
+      th {
+        &.head-checkbox {
+          width: 30px;
+        }
+      }
+      td {
+        padding: 1.375rem 0.75rem;
+        &.qty {
+          min-width: 125px;
+          .current {
+            width: 30%;
+            float: left;
+            text-align: right;
+            padding-right: 0.5rem;
+          }
+          .select {
+            width: 70%;
+            float: left;
+            margin: -0.625rem 0;
+            padding-left: 0.25rem;
+            select {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-items {
+    padding: 0 !important;
+    .order-item {
+      padding: 1rem 1rem 0;
+      border-bottom: 1px solid $gray-lighter;
+      .checkbox {
+        width: 30px;
+        float: left;
+        padding: 0 0.9375rem;
+      }
+      .content {
+        width: calc(100% - 30px);
+        float: left;
+        padding: 0 0.9375rem;
+      }
+      .desc {
+        .name {
+          font-weight: bold;
+        }
+        margin-bottom: 1rem;
+      }
+      .qty {
+        margin-bottom: 1rem;
+        .q {
+          margin-bottom: 0.25rem;
+        }
+        .s {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+  .messages {
+    .message {
+      margin-top: 0.5rem;
+      border-bottom: 1px solid $gray-lighter;
+      &:last-child {
+        border-bottom: 0;
+      }
+      > div {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .customization {
+    margin-top: 0.75rem;
+  }
+}
+/*** Order return page ***/
+#order-return-infos {
+  .thead-default th {
+  }
+  .customization {
+    margin-top: 0.75rem;
+  }
+}
+/*** My account landing page ***/
+.myacc_left {
+  .myacc_name {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    display: inline-block;
+  }
+  .links {
+    margin-top:60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      @include trans-fast;
+      &:last-child {
+        margin-top:50px;
+        font-size:20px;
+        opacity:0.5;
+      }
+      &:before {
+        display:none!important;
+      }
+      i {
+        display: inline-block;
+        margin-right:18px;
+        width:24px;
+        height:24px;
+        @include trans-fast;
+      }
+      &:hover {
+        i {
+          transform: translateX(4px);
+          -webkit-transform: translateX(4px);
+        }
+      }
+    }
+  }
+}
+/*** History page ***/
+#history {
+  .orders {
+    margin: 0 -1rem;
+    .order {
+      padding: 0.75rem 1rem;
+      border-bottom: 2px solid $body-border;
+      .label {
+        display: inline-block;
+        margin: 0.25rem 0;
+        padding: 0.25rem 0.375rem;
+        border-radius: 3px;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+#discount .table-bordered {
+  td, th {
+  border:none;
+  }
+}
+
+/*** FOOTER ***/
+.page-footer {
+  .account-link {
+    margin-right: 2rem;
+    i {
+      font-size: $base-font-size;
+    }
+    span {
+      font-size: $base-font-size;
+      vertical-align: middle;
+    }
+  }
+}
+
+.login-form {
+  margin-top: 15px;
+  .form-footer {
+    text-align: center;
+  }
+}

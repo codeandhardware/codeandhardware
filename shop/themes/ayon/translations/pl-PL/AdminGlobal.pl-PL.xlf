@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl" source-language="pl-PL" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="00d23a76e43b46dae9ec7aa9dcbebb32">
+        <source>Enabled</source>
+        <target>Włączony</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:55</note>
+      </trans-unit>
+      <trans-unit id="b9f5c797ebbf55adccdd8539a65a0241">
+        <source>Disabled</source>
+        <target>Wyłączony</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:62</note>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
+        <source>Yes</source>
+        <target>Tak</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:106</note>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>Nie</target>
+        <note>Context:
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/productcomments/views/templates/admin/_configure/helpers/list/list_content.tpl:108</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

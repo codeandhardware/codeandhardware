@@ -1,0 +1,148 @@
+.quickview {
+  display:flex!important;
+  padding:0!important;
+  align-items: center;
+  justify-content: center;
+  .modal-dialog {
+    width: calc(100% - 30px);
+    max-width: 64rem;
+    min-height: 60vh;
+    max-height: 80vh;
+    overflow: hidden;
+  }
+  .left_col {
+    ul {
+      .thumb-container {
+        width:100%;
+        // min-height: 60vh;
+        img {
+          max-width:100%;
+          width:auto;
+        }
+      }
+    }
+  }
+  .right_col {
+    overflow: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    left: 50%;
+    height: 100%;
+      max-height: 80vh;
+    .right_col_inner {
+      padding:60px 40px;
+    }
+    .discover_qw {
+      margin-top:1rem;
+      a {
+        width: 100%;
+      }
+    }
+    .manufacturer-logo {
+      display: none;
+    }
+  }
+  .modal-content {
+    border:none;
+  }
+  .modal-header {
+    border: none;
+    padding: $small-space;
+  }
+  .modal-body {
+    padding:0;
+  }
+  .modal-footer {
+  }
+  .prod-buttons {
+    display:none;
+  }
+  h1.product-title {
+    padding-right: 40px;
+  }
+  .has-discount .discount {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  button.close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 55px;
+    right: 55px;
+    opacity: 0.8;
+    cursor:pointer;
+    z-index: 5;
+    outline:none;
+    @include trans-fast;
+    &:hover {
+      opacity:1;
+      outline:none;
+      transform: rotate(90deg);
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      * {
+      }
+    }
+  }
+  .layer {
+    display: none;
+  }
+  .product-cover img {
+    width: 95%;
+  }
+  .images-container {
+    .product-images > li.thumb-container > .thumb {
+    }
+  }
+  .mask {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    ul {
+      margin:0;
+    }
+  }
+}
+
+@media(min-width:1200px) {
+  .quickview {
+    .modal-dialog {
+      max-width: 1024px;
+    }
+  }
+}
+@media(min-width:992px) and (max-width:1199px) {
+  .quickview {
+    .modal-dialog {
+      max-width: 760px;
+      margin:0;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .quickview {
+    .modal-dialog {
+      width:100%;
+      height: 100%;
+      margin:0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      max-height: 100%;
+    }
+    .left_col {
+      width:100%;
+    }
+    .right_col {
+      width:100%;
+      position: relative;
+      left:auto;
+      top:auto;
+      overflow: auto;
+    }
+  }
+}
