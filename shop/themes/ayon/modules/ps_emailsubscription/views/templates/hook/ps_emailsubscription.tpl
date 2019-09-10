@@ -25,7 +25,7 @@
 
 <div class="block_newsletter col-md-12 col-sm-12">
   <div class="row">
-    <small id="block-newsletter-label">{l s='Suscríbete a Nuestras Ofertas' d='Shop.Theme.Global'}</small>
+    <h3 id="block-newsletter-label">{l s='Suscríbete a Nuestras Ofertas' d='Shop.Theme.Global'}</h3>
     <div>
       <form action="{$urls.pages.index}#footer" method="post">
             <button
