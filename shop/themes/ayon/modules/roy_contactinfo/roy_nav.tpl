@@ -13,4 +13,5 @@
       }
     {/if}
   </div>
+  <div id="_desktop_contact_phone"> email: coreo@correo.com</div>
 </div>
