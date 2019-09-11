@@ -26,7 +26,7 @@
 
     {block name='page_content_container'}
       <section id="content" class="page-home" data-mob-row="{if isset($roythemes.nc_mob_hp)}{$roythemes.nc_mob_hp}{else}1{/if}">
-       
+       {block name='page_content_top'}{/block}
 
         {block name='page_content'}
           {block name='hook_home'}
