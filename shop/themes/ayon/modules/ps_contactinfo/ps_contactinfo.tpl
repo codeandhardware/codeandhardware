@@ -1,11 +1,11 @@
 <div class="contact-rich">
   <div class="block">
-    <label>{l s='Visit our store' d='Shop.Theme.Global'}</label>
+    <label>{l s='Visitenos' d='Shop.Theme.Global'}</label>
     <div class="data">{$contact_infos.address.formatted nofilter}</div>
   </div>
   {if $contact_infos.phone || $contact_infos.fax || $contact_infos.email}
     <div class="block">
-      <label>{l s='Get in touch' d='Shop.Theme.Global'}</label>
+      <label>{l s='Escribanos un mensaje' d='Shop.Theme.Global'}</label>
       <div class="data">
       {if $contact_infos.phone}
         {$contact_infos.phone}<br />
