@@ -6,7 +6,9 @@
   {block name='header_nav'}
     <nav class="header-nav hidden-md-down">
       <div class="container tb-p">
-     <div class="col-12">Call center: +507 399-2533 | Email: ventas@codeandhardware.com<span class="pull-right">Social Media:</span></div>
+     <div class="col-12">Call center: +507 399-2533 | Email: ventas@codeandhardware.com<span class="pull-right"><i class="material-icons">
+account_circle
+</i></span></div>
       </div>
     </nav>
   {/block}
