@@ -1,0 +1,119 @@
+.favoritesButton svg{
+  width:24px;
+  height:24px;
+}
+.remove-fav.btn {
+  position: absolute;
+  top:-20px;
+  right:calc(50% - 20px);
+  z-index: 2;
+  padding:6px!important;
+  line-height:0!important;
+}
+#favoriteproducts_block_account .product-flags { display: none }
+.remove-fav.in_progress {animation: unset;background:none}
+
+.alert_note{
+}
+.alert_note a{
+  text-decoration: underline;
+}
+.icon-button {
+}
+.box-info-product .wrap_alert{
+  padding-bottom: 20px;
+}
+.box-info-product .wrap_alert .alert_note{
+  margin-left: 10px;
+  width: 142px;
+}
+.wrap_alert:hover .alert_note {
+  display: block;
+}
+.svgic {
+  display: inline-block;
+  fill: currentColor;
+  height: 20px;
+  pointer-events: none;
+  vertical-align: top;
+  width: 20px;
+}
+.smooth02{transition:all .2s ease-in-out}
+.smooth05{transition:all .5s ease-in-out}
+.in_progress {
+  background-image: url("../svg/loader.svg") !important;
+  background-repeat:no-repeat !important;
+  background-position: 50% 50%;
+  background-size: cover;
+  -webkit-animation: rotation 0.6s ease-in-out infinite;
+          animation: rotation 0.6s ease-in-out infinite;
+}
+.in_progress use {
+  opacity: 0
+}
+.pk-infomessage a {color:inherit;text-decoration: underline;}
+.pk-infomessage {
+  position: fixed;
+  z-index: 999;
+  top:114px;
+  right:20px;
+  width:300px;
+}
+.pk-close-popup {
+  position: absolute;
+  top:10px;
+  right:10px;
+  display: block;
+}
+.pk-close-popup svg{
+  width:14px;
+  height: 14px;
+  color:#fff;
+  margin: 0 5px 0 0
+}
+.pk-infomessage-item {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 22px;
+}
+.pk-infomessage-item > div:first-child {
+  padding: 20px;
+}
+.pk-infomessage-item.state-error {
+  background-color: #dc5300;
+  color:#fff;
+}
+.pk-infomessage-item.state-success {
+  background-color: #03a912;
+  color:#fff;
+}
+.pk-infomessage-item.state-info {
+  background-color: #4aaee8;
+  color:#fff;
+}
+.pk-close-timer {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 4px;
+  background-color: rgba(0,0,0,0.3);
+}
+.flex-container {
+  display: flex;
+}
+.align-items-center {
+    align-items: center
+}
+.relative {position: relative;}
+@-webkit-keyframes rotation{
+    0%{-webkit-transform: scale(1); opacity:1;}
+    100%{-webkit-transform: scale(1.8); opacity:0;}
+}
+@keyframes rotation{
+    0%{transform: scale(1); opacity:1;}
+    100%{transform: scale(1.8); opacity:0;}
+}
+.product-miniature .favoritesButton > span {display: none}
+.product-information .wrap_alert {margin-top: 40px}

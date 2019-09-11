@@ -1,0 +1,35 @@
+.dropdown{
+  &:hover .expand-more{
+  }
+  .expand-more{
+    cursor: pointer;
+    user-select: none;
+
+  }
+
+  .active{
+    max-height: 200px;
+    overflow-y: hidden;
+    visibility: visible;
+  }
+
+  select {
+    -moz-appearance: none;
+    border: 0 none;
+    outline: 0 none;
+  }
+}
+.dropdown-item {
+  font-size:$font-size-sm;
+  font-weight:$base-font-weight;
+  opacity: 0.5;
+  @include trans-def;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background: none;
+  text-decoration: none;
+  opacity: 1;
+}
+ul.dropdown-menu {
+  @include shadow-long;
+}

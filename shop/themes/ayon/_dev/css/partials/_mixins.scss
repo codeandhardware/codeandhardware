@@ -1,0 +1,86 @@
+@mixin search-box {
+  form {
+    position: relative;
+    input[type=text] {
+      padding: 0.5rem 2rem 0.5rem 1rem;
+      &:focus {
+        padding-left: 1.5rem;
+        padding-right: 2.5rem;
+        + button {
+        }
+      }
+    }
+    button[type=submit] {
+      background: none;
+      border: none;
+      cursor: pointer;
+      @include trans-fast;
+      &:hover {
+      }
+      .search {
+        @include trans-fast;
+        svg {
+          width: 22px;
+        }
+      }
+      .search:hover {
+        color: #00c293;
+      }
+    }
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+@mixin box-shadow-light {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+@mixin shadow-low {
+  box-shadow: 0 6px 18px 0px rgba(0, 0, 0, 0.12);
+}
+@mixin shadow-medium {
+  box-shadow: 0 14px 22px 0px rgba(0, 0, 0, 0.14);
+}
+@mixin shadow-long {
+  box-shadow: 0 10px 40px 0px rgba(0, 0, 0, 0.12);
+}
+@mixin shadow-long-h {
+  box-shadow: 0 14px 50px 0px rgba(0, 0, 0, 0.22);
+}
+
+@mixin trans-fast {
+  -webkit-transition: all .22s cubic-bezier(.07,.74,.56,.89);
+  transition: all .22s cubic-bezier(.07,.74,.56,.89);
+}
+@mixin trans-def {
+  -webkit-transition: all .4s cubic-bezier(.36,.76,0,.88);
+  transition: all .4s cubic-bezier(.36,.76,0,.88);
+}
+@mixin trans-slow {
+  -webkit-transition: all .88s cubic-bezier(.36,.76,0,.88);
+  transition: all .88s cubic-bezier(.36,.76,0,.88);
+}
+
+@mixin micro {
+  opacity: 0;
+
+  -webkit-transition-timing-function: cubic-bezier(0.13, 0.19, 0.34, 0.96);
+  transition-timing-function: cubic-bezier(0.13, 0.19, 0.34, 0.96);
+
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+}
+@mixin microgo {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: .6s;
+  transition-delay: .6s;
+}
+@mixin microclose {
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}

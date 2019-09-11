@@ -1,0 +1,6 @@
+/* Rev Slider fix */
+/* #activation_dw.rs-dash-widget { display:none!important } */
+/* #templates_dw.rs-dash-widget { display:none!important } */
+/* #nav-sidebar { overflow-y: scroll; } */
+/* body .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.tp-slider-new-dialog-title { height: auto!important } */
+#css_slider_editor_wrap { width:100%!important }
