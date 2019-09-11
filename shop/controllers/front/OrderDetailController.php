@@ -196,7 +196,7 @@ class OrderDetailControllerCore extends FrontController
         }
 
         parent::initContent();
-        $this->setTemplate('customer/order-detail');
+        $this->setTemplate('customer/my-account');
     }
 
     public function getBreadcrumbLinks()
