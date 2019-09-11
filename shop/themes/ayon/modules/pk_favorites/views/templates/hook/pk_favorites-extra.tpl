@@ -47,7 +47,7 @@
     {else}
       {if !$customer.is_logged}
         <span class="tip">
-          {l s='Debes iniciar sesionin' mod='pk_favorites'}
+          {l s='Debes iniciar sesion' mod='pk_favorites'}
         </span>
       {/if}
       {if $customer.is_logged}
