@@ -39,7 +39,7 @@
 
     {block name='page_content_container'}
       <section id="content" class="page-content card card-block">
-        {block name='page_content_top'}{/block}
+       
         {block name='page_content'}
           <!-- Page content -->
         {/block}
