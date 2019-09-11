@@ -9,7 +9,7 @@
         <div class="row">
           {if isset($roythemes.nc_toppanel_lay)}
             {if $roythemes.nc_toppanel_lay !== "1"}
-              <div class="col-md-3 col-xs-3 curlan">
+              <div class="">
                 {hook h='displayNav1'}
               </div>
             {/if}
