@@ -9,7 +9,7 @@
         <div class="row">
           {if isset($roythemes.nc_toppanel_lay)}
             {if $roythemes.nc_toppanel_lay !== "1"}
-              <div class="">
+              <div class="col-md-3 col-xs-3 curlan">
                 {hook h='displayNav1'}
               </div>
             {/if}
@@ -46,6 +46,14 @@
             {/if}
             <div class="head_action">
               <ul>
+                {if isset($roythemes.nc_cl) && $roythemes.nc_cl == "2"}
+                  <li class="curlan">
+                    {widget name="ps_languageselector"}
+                  </li>
+                  <li class="curlan">
+                    {widget name="ps_currencyselector"}
+                  </li>
+                {/if}
                 {if isset($roythemes.header_lay) && ($roythemes.header_lay == "5")}
                   {block name='menu_top'}
                     {include file="_partials/menu.tpl"}
@@ -88,6 +96,14 @@
             </div>
             <div class="head_action">
               <ul>
+                {if isset($roythemes.nc_cl) && $roythemes.nc_cl == "2"}
+                  <li class="curlan">
+                    {widget name="ps_languageselector"}
+                  </li>
+                  <li class="curlan">
+                    {widget name="ps_currencyselector"}
+                  </li>
+                {/if}
                 <li>
                   {block name='acc_top'}
                     {include file="_partials/acc.tpl"}

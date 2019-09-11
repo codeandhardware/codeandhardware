@@ -22,11 +22,13 @@
 .dropdown-item {
   font-size:$font-size-sm;
   font-weight:$base-font-weight;
+  opacity: 0.5;
+  @include trans-def;
 }
 .dropdown-item:focus, .dropdown-item:hover {
   background: none;
   text-decoration: none;
-  color: $body-link-h;
+  opacity: 1;
 }
 ul.dropdown-menu {
   @include shadow-long;

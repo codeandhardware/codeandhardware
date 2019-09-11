@@ -1,9 +1,7 @@
 
 .ets_mm_megamenu.hook-default {
   clear: none;
-  float: left;
   padding: 0;
-  width: 60%;
   margin-top: 0;
 }
 
@@ -39,7 +37,9 @@
   padding: 18px 2px;
   line-height: 22px;
 }
-
+.layout_layout4 .mm_extra_item .user-info a {
+    padding: 12px 2px;
+}
 .mm_block_type_product .thumbnail-container .thumbnail > img {
   margin-bottom: 0;
   margin-left: 0;
@@ -113,9 +113,7 @@
 .layout_layout5.skin_default:not(.scroll_heading) .mm_blocks_li {
   padding: 0 10px;
 }
-.hook-default.layout_layout5 .mm_menus_li > a {
-  padding: 12px 15px;
-}
+
 .hook-default .ets_mm_megamenu_content .container {
   padding: 0;
 }

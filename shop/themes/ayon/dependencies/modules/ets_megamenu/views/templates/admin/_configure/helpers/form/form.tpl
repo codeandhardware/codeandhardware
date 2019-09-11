@@ -1,5 +1,5 @@
 {*
-* 2007-2018 ETS-Soft
+* 2007-2019 ETS-Soft
 *
 * NOTICE OF LICENSE
 *
@@ -14,7 +14,7 @@
 * needs, please contact us for extra customization service at an affordable price
 *
 *  @author ETS-Soft <etssoft.jsc@gmail.com>
-*  @copyright  2007-2018 ETS-Soft
+*  @copyright  2007-2019 ETS-Soft
 *  @license    Valid for 1 website (or project) for each purchase of license
 *  International Registered Trademark & Property of ETS-Soft
 *}
@@ -55,7 +55,39 @@
     					{/strip}
     				</div>
     			{/foreach} 
-            {/if} 
+            {/if}
+    {elseif $input.type == 'search'}
+        <div class="mm_search_product_form">
+            <input class="mm_search_product" name="mm_search_product" {if isset($input.placeholder)}placeholder="{$input.placeholder|escape:'html':'utf-8'}"{/if} autocomplete="off" type="text" />
+            <input class="mm_product_ids" name="id_products" value="{$fields_value[$input.name]|escape:'html':'utf-8'}" type="hidden" />
+            <ul class="mm_products">
+                {hook h='displayMMProductList' ids = $fields_value[$input.name]}
+                <li class="mm_product_loading"></li>
+            </ul>
+        </div>
+    {elseif $input.type == 'radios'}
+        {if isset($input.values) && $input.values}
+            <ul class="mm_product_type">
+            {foreach $input.values as $value}
+                {assign var=id_radio value=$input.name|cat:'_'|cat:$value.value|escape:'html':'UTF-8'}
+                <li class="mm_type_item {$value.value|escape:'html':'UTF-8'}">
+                    <label for="{$id_radio|escape:'html':'UTF-8'}">
+                        <input type="radio" name="{$input.name|escape:'html':'UTF-8'}" id="{$id_radio|escape:'html':'UTF-8'}" {if isset($value.value)} value="{$value.value|escape:'html':'UTF-8'}"{/if}{if isset($fields_value[$input.name]) && $fields_value[$input.name] && ($value.value == $fields_value[$input.name])} checked="checked"{/if} />
+                        {$value.label|escape:'html':'UTF-8'}
+                    </label>
+                </li>
+            {/foreach}
+            </ul>
+        {/if}
+    {elseif $input.class == 'mm_browse_icon' && $input.type == 'text'}
+        <div class="dummyfile input-group">
+            {$smarty.block.parent}
+            <span class="input-group-btn mm_browse_icon">
+                <button type="button" name="submitAddBrowseIcon" class="btn btn-default">
+                    <i class="icon-search"></i>&nbsp;{l s='Browse icon' mod='ets_megamenu'}
+                </button>
+            </span>
+        </div>
     {else}
         {$smarty.block.parent} 
         {if $input.name=='ETS_MM_CACHE_LIFE_TIME'}
@@ -105,7 +137,7 @@
     				<i class="{if isset($fieldset['form']['submit']['icon'])}{$fieldset['form']['submit']['icon']|escape:'html':'UTF-8'}{else}process-icon-save{/if}"></i> {$fieldset['form']['submit']['title']|escape:'html':'UTF-8'}
     			</button>
                 <div class="mm_saving">
-                    <img src="{$image_baseurl|escape:'html':'UTF-8'}loader.gif" />
+                    <img src="{$image_baseurl|escape:'html':'UTF-8'}loader.gif" /><br />
                     {l s='Saving' mod='ets_megamenu'}
                 </div>
             </div>

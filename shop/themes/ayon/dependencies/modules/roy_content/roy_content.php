@@ -17,7 +17,7 @@ class Roy_Content extends Module
 	{
 		$this->name = 'roy_content';
 		$this->tab = 'front_office_features';
-		$this->version = '3.1';
+		$this->version = '3.2';
 		$this->bootstrap = true;
 		$this->secure_key = Tools::encrypt($this->name);
 		$this->default_language = Language::getLanguage(Configuration::get('PS_LANG_DEFAULT'));
@@ -73,6 +73,7 @@ class Roy_Content extends Module
 			|| !$this->installDB()
 			|| !$this->installFixtures(Language::getLanguages(true)) ||
 			!$this->registerHook('displayHeader') ||
+			!$this->registerHook('displayHeaderContent') ||
 			!$this->registerHook('displayTopColumn') ||
 		  !$this->registerHook('displayHome') ||
 			!$this->registerHook('displayFooterBefore') ||
@@ -253,6 +254,15 @@ class Roy_Content extends Module
 	public function hookdisplayTopColumn()
 	{
 		return $this->hookdisplayTop();
+	}
+
+	public function hookdisplayHeaderContent()
+	{
+		$this->context->smarty->assign(array(
+			'htmlitems' => $this->getItemsFromHook('toppanel'),
+			'hook' => 'toppanel'
+		));
+		return $this->display(__FILE__, 'hook.tpl');
 	}
 
 	public function hookdisplayTop()
@@ -600,6 +610,7 @@ class Roy_Content extends Module
 		foreach ($this->languages as $language)
 		{
 			$hooks[$language['id_lang']] = array(
+				'toppanel',
 				'top',
 				'home',
 				'footerbefore',

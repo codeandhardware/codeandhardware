@@ -1,5 +1,5 @@
 {**
- * 2007-2017 PrestaShop
+ * 2007-2019 PrestaShop and Contributors
  *
  * NOTICE OF LICENSE
  *
@@ -15,21 +15,21 @@
  *
  * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
  * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
+ * needs please refer to https://www.prestashop.com for more information.
  *
  * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2017 PrestaShop SA
+ * @copyright 2007-2019 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{if $facets|count}
   <div id="search_filters">
 
-    <!-- <h4 class="sidebar-title hidden-sm-down">
-      <span>{l s='Filter' d='Shop.Theme.Actions'}</span>
-    </h4> -->
-
     {foreach from=$facets item="facet"}
-      {if $facet.displayed}
+      {if !$facet.displayed}
+        {continue}
+      {/if}
+	  
         <section class="facet clearfix">
           <h4 class="h4 facet-title hidden-md-down">{l s='Filter by' d='Shop.Theme.Actions'} {$facet.label}</h4>
           {assign var=_expand_id value=10|mt_rand:100000}
@@ -48,11 +48,13 @@
           </div>
 
           {if $facet.widgetType !== 'dropdown'}
-
             {block name='facet_item_other'}
               <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if}">
                 {foreach from=$facet.filters key=filter_key item="filter"}
-                  {if $filter.displayed}
+					{if !$filter.displayed}
+					  {continue}
+					{/if}
+					
                     <li>
                       <label class="facet-label{if $filter.active} active {/if}" for="facet_input_{$_expand_id}_{$filter_key}">
                         {if $facet.multipleSelectionAllowed}
@@ -96,7 +98,6 @@
                         </a>
                       </label>
                     </li>
-                  {/if}
                 {/foreach}
               </ul>
             {/block}
@@ -145,9 +146,8 @@
                 </li>
               </ul>
             {/block}
-
           {/if}
         </section>
-      {/if}
     {/foreach}
   </div>
+{/if}

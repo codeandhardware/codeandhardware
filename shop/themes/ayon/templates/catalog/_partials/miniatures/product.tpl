@@ -28,7 +28,7 @@
       <div class="product-image">
         {block name='product_thumbnail'}
           <a href="{$product.url}" class="thumbnail product-thumbnail noeffect">
-            <img
+            <img itemprop="image"
               src = "{$product.cover.bySize.home_default.url}"
               alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
               data-full-size-image-url = "{$product.cover.large.url}"
@@ -154,7 +154,12 @@
         <div class="prod-short-desc" itemprop="description">{$product.description_short nofilter}</div>
         {block name='product_price_and_shipping'}
           {if $product.show_price}
-            <div class="product-price-and-shipping">
+            <div class="product-price-and-shipping" itemprop="offers"
+                 itemscope
+                 itemtype="https://schema.org/Offer">
+                <link itemprop="availability" href="https://schema.org/InStock"/>
+                <meta itemprop="priceCurrency" content="{$currency.iso_code}">
+                <meta itemprop="url" content="{$product.url}">
               {if $product.has_discount}
                 {hook h='displayProductPriceBlock' product=$product type="old_price"}
 

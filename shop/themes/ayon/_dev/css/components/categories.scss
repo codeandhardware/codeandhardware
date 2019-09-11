@@ -149,13 +149,11 @@
 .facet-dropdown {
   padding-left: 0;
   padding-right: 0;
-  border: 3px solid transparent;
+  margin-bottom: 12px;
   box-sizing: border-box;
   &.open {
     border: 0;
     > .select-title {
-      border: 3px solid $sidebar-block-decor;
-      background: $gray-lighter;
     }
   }
   .select-title {
@@ -163,6 +161,11 @@
     align-items: center;
     margin-left: 0;
     width: 100%;
+    height: 3.75rem;
+    min-height: 60px;
+    padding: 19px 28px;
+    border-width: 2px;
+    border-style: solid;
     cursor: pointer;
     > i {
       margin-left: auto;
@@ -170,14 +173,15 @@
   }
   .select-list {
     display: block;
-    padding: $small-space $medium-space;
+    padding: 8px 18px;
+    opacity:0.5;
     &:hover {
       text-decoration: none;
+      opacity:1;
     }
   }
   .dropdown-menu {
-    padding: 0;
-    margin-top: 3px;
+    padding: 12px;
     left: auto;
     width: 100%;
     border: none;
@@ -203,7 +207,7 @@
   .color, .custom-checkbox input[type="checkbox"] + span.color {
     width: 26px;
     height: 26px;
-    margin-right:9px;
+    // margin-right:9px;
   }
   .facet-label.active .custom-checkbox span.color, .facet-label:hover .custom-checkbox span.color {
     border: none!important;
@@ -239,13 +243,18 @@
     }
   }
 }
-#search_filters .facet .facet-label {
+body #search_filters .facet .facet-label {
   text-align: left;
   display: inline-flex;
   margin:6px 0;
   align-items: center;
   .custom-checkbox {
-    margin-right:8px;
+    top:-1px;
+    margin-right:7px;
+  }
+  .custom-radio {
+    top:-1px;
+    margin-right:6px;
   }
 }
 #search_filters_brands,
@@ -322,6 +331,7 @@
       width: auto;
       background: none;
       border:none;
+      box-shadow: none;
       padding:0;
       margin:0;
       display: flex;
@@ -331,7 +341,12 @@
         display: inline-block;
         height: 24px;
         width: 24px;
-        svg {
+        @include trans-def;
+      }
+      &:hover {
+        i {
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
         }
       }
     }
@@ -481,6 +496,12 @@
   }
 }
 
+#category {
+  #main h1 {
+    margin-bottom:2rem;
+  }
+}
+
 /*** Responsive part ***/
 @include media-breakpoint-down(md) {
   .products-selection {
@@ -499,7 +520,7 @@
     }
   }
   #category {
-    #left-column {
+    #left-column, #right-column {
       width: 100%;
       #search_filters_wrapper {
         display:block!important;
@@ -553,7 +574,6 @@
                 pointer-events: none;
                 width:24px;
                 * {
-                  stroke: $sidebar-block-link!important;
                 }
               }
             }
@@ -669,6 +689,7 @@
   .products-sort-order {
     .select-title {
       margin-left: 0;
+      line-height: 1.1;
     }
   }
   .products-selection {
@@ -718,7 +739,7 @@
   }
 
   #category {
-    #left-column {
+    #left-column, #right-column {
       #search_filters_wrapper {
         margin-top:2rem;
       }

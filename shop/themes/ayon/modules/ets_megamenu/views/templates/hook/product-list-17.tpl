@@ -25,7 +25,7 @@
 <div class="menu-prods">
 	{if isset($products) && $products}
 		{foreach from=$products item="product"}
-	    <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product|intval}" data-id-product-attribute="{$product.id_product_attribute|intval}" itemscope itemtype="http://schema.org/Product">
+	    <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product|intval}" data-id-product-attribute="{$product.id_product_attribute|intval}">
 	    <div class="thumbnail-container tip_inside">
 	      {block name='product_thumbnail'}
 	        <a href="{$product.url|escape:'html':'UTF-8'}" class="thumbnail product-thumbnail">

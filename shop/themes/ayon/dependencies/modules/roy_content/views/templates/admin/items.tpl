@@ -138,6 +138,7 @@
 									<label class="control-label col-lg-3">{l s='Hook to which the image should be attached' d='Modules.RoyBanners.Shop'}</label>
 									<div class="col-lg-7">
 										<select name="item_hook" default="top" class="fixed-width-lg">
+											<option value="toppanel"{if $hItem.hook == 'toppanel'} selected="selected"{/if}>top panel</option>
 											<option value="top"{if $hItem.hook == 'top'} selected="selected"{/if}>top</option>
                       <option value="home"{if $hItem.hook == 'home'} selected="selected"{/if}>home</option>
                       <option value="footerbefore"{if $hItem.hook == 'footerbefore'} selected="selected"{/if}>before footer</option>

@@ -1,5 +1,5 @@
 {*
-* 2007-2018 ETS-Soft
+* 2007-2019 ETS-Soft
 *
 * NOTICE OF LICENSE
 *
@@ -14,7 +14,7 @@
 * needs, please contact us for extra customization service at an affordable price
 *
 *  @author ETS-Soft <etssoft.jsc@gmail.com>
-*  @copyright  2007-2018 ETS-Soft
+*  @copyright  2007-2019 ETS-Soft
 *  @license    Valid for 1 website (or project) for each purchase of license
 *  International Registered Trademark & Property of ETS-Soft
 *}
@@ -34,7 +34,7 @@
                     {if $menu.bubble_text}<span class="mm_bubble_text" style="background: {if $menu.bubble_background_color}{$menu.bubble_background_color|escape:'html':'UTF-8'}{else}#FC4444{/if}; color: {if $menu.bubble_text_color|escape:'html':'UTF-8'}{$menu.bubble_text_color}{else}#ffffff{/if};">{$menu.bubble_text}</span>{/if}
                 </span>
             </span>
-            <div class="mm_buttons">
+            <div class="mm_buttons button_add_tab">
                 <span class="mm_menu_delete" title="{l s='Delete menu' mod='ets_megamenu'}">{l s='Delete' mod='ets_megamenu'}</span>  
                 <span class="mm_duplicate" title="{l s='Duplicate menu' mod='ets_megamenu'}">{l s='Duplicate' mod='ets_megamenu'}</span>                      
                 <span class="mm_menu_edit" title="{l s='Edit menu' mod='ets_megamenu'}">{l s='Edit menu' mod='ets_megamenu'}</span>                
@@ -88,11 +88,3 @@
 {if $have_li}
 </li>
 {/if}
-<script type="text/javascript">
-$(document).ready(function(){
-    if($('.mm_menus_li.open .mm_tabs_ul .mm_tabs_li.open .mm_columns_ul').length)
-    {
-       $('.mm_menus_li.open .mm_tabs_ul').css('height',($('.mm_menus_li.open .mm_tabs_ul .mm_tabs_li.open .mm_columns_ul').height()+300)+'px') 
-    }
-});
-</script>

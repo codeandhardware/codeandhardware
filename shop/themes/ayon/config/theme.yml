@@ -59,7 +59,6 @@ global_settings:
       displayNav1:
         - ps_languageselector
         - ps_currencyselector
-        - roy_contactinfo
       displayNav2:
         - roy_contactinfo
         - ps_customersignin
@@ -71,8 +70,8 @@ global_settings:
         - roy_content
       displayHome:
         - ps_bestsellers
-        - ps_featuredproducts
         - roy_content
+        - ps_featuredproducts
       displayFooterBefore:
         - roy_content
       displayFooter:
@@ -84,8 +83,8 @@ global_settings:
         - ps_categorytree
         - ps_facetedsearch
         - roy_specials
-        - ps_linklist
         - roy_content
+        - ps_linklist
       displayRightColumn:
         - ps_categorytree
         - ps_facetedsearch
@@ -188,10 +187,10 @@ dependencies:
 theme_settings:
   default_layout: layout-full-width
   layouts:
-    index: layout-full-width
-    category: layout-right-column
-    best-sales: layout-right-column
-    new-products: layout-right-column
-    prices-drop: layout-right-column
-    manufacturer: layout-right-column
+    index: layout-left-column
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    manufacturer: layout-left-column
     contact: layout-full-width

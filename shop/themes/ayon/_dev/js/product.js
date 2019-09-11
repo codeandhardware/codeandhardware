@@ -49,11 +49,15 @@ $(document).ready(function () {
     }
     $($('.tabs .nav-link.active').attr('href')).addClass('active').removeClass('fade');
     $('.js-product-images-modal').replaceWith(event.product_images_modal);
-    thumbsInit();
     whiteborder();
     updateCounters();
     shareclick();
     slideqv();
+
+    setTimeout( function(){
+      thumbsInit();
+    },200);
+
   });
   function thumbsDestroy() {
   }
@@ -84,6 +88,7 @@ $(document).ready(function () {
           pageDots: false,
           cellAlign: 'left',
           contain: true,
+          imagesLoaded: true,
           arrowShape: {
             x0: 30,
             x1: 60, y1: 50,
@@ -97,6 +102,7 @@ $(document).ready(function () {
           prevNextButtons: false,
           pageDots: false,
           cellAlign: 'center',
+          imagesLoaded: true,
           contain: true
         });
       }
@@ -125,6 +131,7 @@ $(document).ready(function () {
       pageDots: false,
       cellAlign: 'left',
       contain: true,
+      imagesLoaded: true,
       arrowShape: {
         x0: 30,
         x1: 60, y1: 50,

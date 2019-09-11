@@ -347,6 +347,7 @@ textarea, textarea.form-control {
   -webkit-appearance: none;
   background: $input-bg url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 1.25rem 1.25rem;
   height: 3.75rem;
+  min-height: 60px;
   padding: 19px 28px;
   border-width:2px;
   border-style: solid;
@@ -532,7 +533,10 @@ body select.form-control:not([size]):not([multiple]) {
     margin-top: 0.25rem;
     opacity: 0;
     width:1.25rem;
-    height: auto;
+    height:1.25rem;
+    top:0;
+    z-index: 3;
+    // height: auto;
     cursor: pointer;
     position: absolute;
     + span {

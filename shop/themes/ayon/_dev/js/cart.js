@@ -47,7 +47,7 @@ $(document).ready(() => {
       $('body').addClass('side_open')
       $('.side_menu .side_menu_rel > div').removeClass('show');
       $('#side_cart_wrap').addClass('show');
-      $('.side_close').removeClass('search_close menu_close mail_close').addClass('cart_close');
+      $('.side_close').removeClass('search_close menu_close').addClass('cart_close');
       $('.side_menu').find('.cart-prods > li').each(function(i){
         var row = $(this);
         setTimeout(function(){

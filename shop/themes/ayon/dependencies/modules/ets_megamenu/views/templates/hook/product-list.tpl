@@ -1,5 +1,5 @@
 {*
-* 2007-2018 PrestaShop
+* 2007-2019 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,15 +18,15 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2018 PrestaShop SA
+*  @copyright  2007-2019 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if isset($products) && $products}	
 	<!-- Products list -->
-	<ul{if isset($id) && $id} id="{$id|intval}"{/if} class="product_list row{if isset($class) && $class} {$class|escape:'html':'UTF-8'}{/if}">
+	<ul{if isset($id) && $id} id="{$id|intval}"{/if} class="menu_product_list row{if isset($class) && $class} {$class|escape:'html':'UTF-8'}{/if}">
 	{foreach from=$products item=product name=products}		
-		<li class="ajax_block_product col-xs-12 col-sm-12">
+		<li class="menu_block_product col-xs-12 col-sm-12">
 			<div class="product-container" itemscope itemtype="https://schema.org/Product">
 				<div class="left-block">
 					<div class="product-image-container">
@@ -77,6 +77,10 @@
 						{if isset($product.pack_quantity) && $product.pack_quantity}{$product.pack_quantity|intval|cat:' x '}{/if}
 						<a class="product-name" href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}" itemprop="url" >
 							{$product.name|truncate:45:'...'|escape:'html':'UTF-8'}
+							{if isset($product.attributes) && $product.attributes}
+								{assign var='ik2' value=0}
+								<span class="product_combination"> {foreach from=$product.attributes item='attribute'}{assign var='ik2' value=$ik2+1}{if isset($attribute.group_name)}{$attribute.group_name|truncate:80:'...':true|escape:'html':'UTF-8'}{else}{$attribute.group|truncate:80:'...':true|escape:'html':'UTF-8'}{/if}-{if isset($attribute.attribute_name)}{$attribute.attribute_name|truncate:80:'...':true|escape:'html':'UTF-8'}{else}{$attribute.name|truncate:80:'...':true|escape:'html':'UTF-8'}{/if}{if $ik2 < count($product.attributes)}, {/if}{/foreach}</span>
+							{/if}
 						</a>
 					</h5>
 					{capture name='displayProductListReviews'}{hook h='displayProductListReviews' product=$product}{/capture}
@@ -158,4 +162,6 @@
 {addJsDefL name=max_item}{l s='You cannot add more than %d product(s) to the product comparison' sprintf=$comparator_max_item js=1 mod='ets_megamenu'}{/addJsDefL}
 {addJsDef comparator_max_item=$comparator_max_item}
 {addJsDef comparedProductsIds=$compared_products}
+{else}
+	<span class="mm_alert alert-warning">{l s='No product available' mod='ets_megamenu'}</span>
 {/if}

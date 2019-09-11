@@ -38,31 +38,31 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/_partials
         <source>Days</source>
         <target>Days</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:137</note>
       </trans-unit>
       <trans-unit id="6a7e73161603d87b26a8eac49dab0a9c">
         <source>Hours</source>
         <target>Hours</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:137</note>
       </trans-unit>
       <trans-unit id="46ad903d8a42736510c592c944c28136">
         <source>Limited Special Offer! Expires in:</source>
         <target>Limited Special Offer! Expires in:</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:117</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:118</note>
       </trans-unit>
       <trans-unit id="f670ea66cfb0e90bd6090472ad692694">
         <source>Minutes</source>
         <target>Minutes</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:137</note>
       </trans-unit>
       <trans-unit id="8f19a8c7566af54ea8981029730e5465">
         <source>Seconds</source>
         <target>Seconds</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:136</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:137</note>
       </trans-unit>
     </body>
   </file>
@@ -72,13 +72,13 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_
         <source>Mins</source>
         <target>Mins</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/miniatures/product.tpl:186</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/miniatures/product.tpl:191</note>
       </trans-unit>
       <trans-unit id="aa75f86227386200b4f644b6e4d456c0">
         <source>Secs</source>
         <target>Secs</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/miniatures/product.tpl:186</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/miniatures/product.tpl:191</note>
       </trans-unit>
     </body>
   </file>
@@ -88,19 +88,19 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_
         <source><![CDATA[printf('%s',$_smarty_tpl->tpl_vars['nbComments']->value]]></source>
         <target><![CDATA[printf('%s',$_smarty_tpl->tpl_vars['nbComments']->value]]></target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:99</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:102</note>
       </trans-unit>
       <trans-unit id="457dd55184faedb7885afd4009d70163">
         <source>Review</source>
         <target>Review</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:99</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:102</note>
       </trans-unit>
       <trans-unit id="34e80a799d144cfe4af46815e103f017">
         <source>Reviews</source>
         <target>Reviews</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:99</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:102</note>
       </trans-unit>
     </body>
   </file>

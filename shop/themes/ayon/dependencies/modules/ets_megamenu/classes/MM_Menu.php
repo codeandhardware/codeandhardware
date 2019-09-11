@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2018 ETS-Soft
+ * 2007-2019 ETS-Soft
  *
  * NOTICE OF LICENSE
  *
@@ -15,7 +15,7 @@
  * needs please contact us for extra customization service at an affordable price
  *
  *  @author ETS-Soft <etssoft.jsc@gmail.com>
- *  @copyright  2007-2018 ETS-Soft
+ *  @copyright  2007-2019 ETS-Soft
  *  @license    Valid for 1 website (or project) for each purchase of license
  *  International Registered Trademark & Property of ETS-Soft
  */
@@ -30,6 +30,7 @@ class MM_Menu extends MM_Obj
     public $enabled;
     public $menu_open_new_tab;
     public $menu_ver_hidden_border;
+    public $menu_ver_alway_show;
     public $sort_order;
     public $id_category;
     public $id_manufacturer;
@@ -73,6 +74,7 @@ class MM_Menu extends MM_Obj
             'tab_item_width'=> array('type'=>self::TYPE_STRING),
             'menu_ver_background_color' => array('type' => self::TYPE_STRING),
             'menu_ver_hidden_border'=>array('type'=>self::TYPE_INT),
+            'menu_ver_alway_show'=>array('type'=>self::TYPE_INT),
             'enabled' => array('type' => self::TYPE_INT),
             'menu_open_new_tab' => array('type' => self::TYPE_INT),
             'menu_icon' => array('type' => self::TYPE_STRING, 'lang' => false, 'validate' => 'isCleanHtml'),
@@ -103,13 +105,14 @@ class MM_Menu extends MM_Obj
                 $this->$field = $temp;
             }
         }
-        unset($context);        
+        $this->context = $context;
         $this->setFields(Ets_megamenu::$menus);
 	}
-    public function add($autodate = true, $null_values = false)
+    public function add($autodate = true, $null_values = false, $id_shop = null)
 	{
 		$context = Context::getContext();
-		$id_shop = $context->shop->id;
+		if (!$id_shop)
+		    $id_shop = $context->shop->id;
 		$res = parent::add($autodate, $null_values);
 		$res &= Db::getInstance()->execute('
 			INSERT INTO `'._DB_PREFIX_.'ets_mm_menu_shop` (`id_shop`, `id_menu`)

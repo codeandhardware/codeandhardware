@@ -46,7 +46,7 @@
       <h1 class="h1">{$category.name}</h1>
     </div>
 
-    {if isset($subcategories)}
+    {if isset($subcategories) && isset($roythemes.nc_subcat) && $roythemes.nc_subcat == "1"}
       <!-- Subcategories -->
       <div id="subcategories">
         <ul class="clearfix">

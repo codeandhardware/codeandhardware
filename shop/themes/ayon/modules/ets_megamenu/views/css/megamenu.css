@@ -241,7 +241,7 @@ li.has-sub > .ets_mm_categories {
 #side_menu_wrap .mm_blocks_ul {
   padding-bottom: 14px;
 }
-#side_menu_wrap .ets_mm_megamenu_content { 
+#side_menu_wrap .ets_mm_megamenu_content {
   padding-bottom: 40px;
 }
 .ets_mm_megamenu ul {
@@ -1443,4 +1443,111 @@ li.has-sub > a {
         }
     }
 
-/* } */
+
+
+
+@media (max-width: 991px){
+    .menu_list .mm_columns_ul {
+      max-width:100%;
+    }
+    ul.ets_mm_categories li.has-sub{
+        width:100%;
+    }
+    ul.ets_mm_categories li.has-sub .arrow{
+        /* line-height:30px;
+        height:30px; */
+    }
+
+    .ets_mm_block_content ul.ets_mm_categories li.has-sub > a::after {
+        display:none;
+    }
+    .ets_mm_block_content ul.ets_mm_categories li.has-sub ul{
+        position: relative;
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+        float:left;
+        height:0;
+        overflow: hidden;
+        padding: 0 0 0 15px;
+    }
+    .ets_mm_block_content ul.ets_mm_categories li.has-sub ul.active{
+        height:auto;
+    }
+    .mm_tab_toggle_title a {
+        margin: -9px -15px;
+        padding: 9px 15px;
+    }
+    .clicktext_show_submenu .mm_tab_toggle_title a {
+        min-width: calc(100% + 30px);
+        min-width: -webkit-calc(100% + 30px);
+    }
+    .clicktext_show_submenu .mm_tab_toggle_title, .clicktext_show_submenu .mm_tab_toggle_title a {
+        width: 100%;
+        display: block;
+    }
+    .clicktext_show_submenu .mm_tab_has_child::after{
+        pointer-events: none;
+    }
+}
+
+
+@media (max-width: 1199px) and (min-width: 992px){
+    .changestatus ul.ets_mm_categories li.has-sub{
+        width:100%;
+    }
+    .changestatus ul.ets_mm_categories li.has-sub .arrow{
+        top:0;
+        line-height:30px;
+        height:30px;
+    }
+    .changestatus .clicktext_show_submenu .mm_tab_toggle_title a {
+        min-width: calc(100% + 30px);
+        min-width: -webkit-calc(100% + 30px);
+    }
+    .changestatus .clicktext_show_submenu .mm_tab_has_child::after{
+        pointer-events: none;
+    }
+    .changestatus .clicktext_show_submenu .mm_tab_toggle_title, .clicktext_show_submenu .mm_tab_toggle_title a {
+        width: 100%;
+        display: block;
+    }
+
+    .changestatus .ets_mm_block_content ul.ets_mm_categories li.has-sub > a::after {
+        display:none;
+    }
+    .changestatus .ets_mm_block_content ul.ets_mm_categories li.has-sub ul{
+        position: relative;
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+        float:left;
+        height:0;
+        overflow: hidden;
+        padding: 0 15px;
+    }
+    .changestatus .ets_mm_block_content ul.ets_mm_categories li.has-sub ul.active{
+        height:auto;
+    }
+}
+
+@media(min-width:992px) {
+  .menu_list .ets_mm_block > h4 {
+    padding:12px 28px;
+  }
+}
+@media(max-width:991px) {
+  .menu_list .ets_mm_block > h4 {
+    padding:12px 0;
+  }
+}

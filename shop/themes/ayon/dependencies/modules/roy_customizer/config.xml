@@ -2,7 +2,7 @@
 <module>
     <name>roy_customizer</name>
     <displayName><![CDATA[Roy Ayon Customizer]]></displayName>
-    <version><![CDATA[1.0]]></version>
+    <version><![CDATA[1.2]]></version>
     <description><![CDATA[Customize the design of your shop]]></description>
     <author><![CDATA[RoyThemes]]></author>
     <tab><![CDATA[front_office_features]]></tab>

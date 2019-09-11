@@ -2,7 +2,7 @@
 <module>
     <name>ets_megamenu</name>
     <displayName><![CDATA[Mega Menu PRO]]></displayName>
-    <version><![CDATA[2.0.2]]></version>
+    <version><![CDATA[2.1.0]]></version>
     <description><![CDATA[Visual drag and drop mega menu builder]]></description>
     <author><![CDATA[ETS-Soft]]></author>
     <tab><![CDATA[front_office_features]]></tab>

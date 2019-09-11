@@ -3,10 +3,6 @@ body#checkout {
     border:none;
   }
 
-  .custom-checkbox {
-    span {
-    }
-  }
   section#content {
     margin-bottom: 1.563rem;
   }
@@ -271,6 +267,7 @@ body#checkout {
       }
       .radio-inline {
         padding: 0;
+        margin-right:14px;
       }
     }
     .sign-in {

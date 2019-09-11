@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2018 ETS-Soft
+ * 2007-2019 ETS-Soft
  *
  * NOTICE OF LICENSE
  *
@@ -15,7 +15,7 @@
  * needs please contact us for extra customization service at an affordable price
  *
  *  @author ETS-Soft <etssoft.jsc@gmail.com>
- *  @copyright  2007-2018 ETS-Soft
+ *  @copyright  2007-2019 ETS-Soft
  *  @license    Valid for 1 website (or project) for each purchase of license
  *  International Registered Trademark & Property of ETS-Soft
  */
@@ -31,6 +31,7 @@ require_once(dirname(__FILE__).'/../classes/MM_Cache.php');
 require_once(dirname(__FILE__).'/../classes/MM_Tab.php');
 function upgrade_module_2_0_2($object)
 {
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_tab` ADD COLUMN IF NOT EXISTS `url` text NOT NULL');
-    unset($object);
+    return (bool)Db::getInstance()->execute(
+        $object->alterSQL('ets_mm_tab','url', 'text NOT NULL')
+    );
 }

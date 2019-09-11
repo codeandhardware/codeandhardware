@@ -1,5 +1,5 @@
 <div class="search_tags_roy">
-  {l s='You can try some popular tags here:' d='Shop.Theme.Globals'}
+  {l s='You can try some popular tags here:' mod='roy_customizer'}
   <ul>
     {foreach from=$box_tags_array item=tag}
       <li>
@@ -11,7 +11,7 @@
 
 {if isset($products) && $products}
 <div class="search_products_roy">
-  <span class="search_prod_title">{l s='Featured products:' d='Shop.Theme.Globals'}</span>
+  <span class="search_prod_title">{l s='Featured products:' mod='roy_customizer'}</span>
   <ul>
       {foreach from=$products item=product}
         <li class="search_prod tip_inside">

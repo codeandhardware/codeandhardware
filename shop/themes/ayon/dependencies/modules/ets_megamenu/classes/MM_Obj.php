@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2018 ETS-Soft
+ * 2007-2019 ETS-Soft
  *
  * NOTICE OF LICENSE
  *
@@ -15,7 +15,7 @@
  * needs please contact us for extra customization service at an affordable price
  *
  *  @author ETS-Soft <etssoft.jsc@gmail.com>
- *  @copyright  2007-2018 ETS-Soft
+ *  @copyright  2007-2019 ETS-Soft
  *  @license    Valid for 1 website (or project) for each purchase of license
  *  International Registered Trademark & Property of ETS-Soft
  */
@@ -57,6 +57,7 @@ class MM_Obj extends ObjectModel
                     'lang' => isset($config['lang']) ? $config['lang'] : false,
                     'showRequired' => isset($config['showRequired']) && $config['showRequired'],
                     'hide_delete' => isset($config['hide_delete']) ? $config['hide_delete'] : false,
+                    'placeholder' => isset($config['placeholder']) ? $config['placeholder'] : false,
                     'display_img' => $this->id && isset($config['type']) && $config['type']=='file' && $this->$key!='' && @file_exists(dirname(__FILE__).'/../views/img/upload/'.$this->$key) ? $helper->module->modulePath().'views/img/upload/'.$this->$key : false,
                     'img_del_link' => $this->id && isset($config['type']) && $config['type']=='file' && $this->$key!='' && @file_exists(dirname(__FILE__).'/../views/img/upload/'.$this->$key) ? $helper->module->baseAdminUrl().'&deleteimage='.$key.'&itemId='.(isset($this->id)?$this->id:'0').'&mm_object=MM_'.Tools::ucfirst($fields_form['form']['name']) : false, 
                 );
@@ -84,7 +85,6 @@ class MM_Obj extends ObjectModel
 		$helper->submit_action = 'save_'.$this->fields['form']['name'];
         $link = new Link();
 		$helper->currentIndex = $link->getAdminLink('AdminModules', true).'&configure=ets_megamenu';
-		$helper->token = Tools::getAdminTokenLite('AdminModules');
 		$language = new Language((int)Configuration::get('PS_LANG_DEFAULT'));
         $fields = array();        
         $languages = Language::getLanguages(false);
@@ -446,10 +446,18 @@ class MM_Obj extends ObjectModel
                         $errors[] = Ets_megamenu::$trans['suppliers_required_text'];
                     break; 
                 case 'PRODUCT':
-                    if(!Tools::getValue('id_products'))
-                        $errors[] = Ets_megamenu::$trans['products_required_text'];
-                    elseif(!preg_match('/^[0-9]+(,[0-9]+)*$/', Tools::getValue('id_products')))
-                        $errors[] = Ets_megamenu::$trans['products_not_valid_text'];
+                	if (Tools::getValue('product_type', false) == 'specific')
+	                {
+		                if(!Tools::getValue('id_products', false))
+			                $errors[] = Ets_megamenu::$trans['products_required_text'];
+	                }
+	                else
+	                {
+		                if(!Tools::getValue('product_count', false))
+			                $errors[] = Ets_megamenu::$trans['product_count_required_text'];
+		                elseif(!Validate::isUnsignedId(Tools::getValue('product_count')))
+			                $errors[] = Ets_megamenu::$trans['product_count_not_valid_text'];
+	                }
                     break;                
                 case 'IMAGE':
                     if($this->image=='' && (!isset($_FILES['image']['size']) || isset($_FILES['image']['size']) && !$_FILES['image']['size']))

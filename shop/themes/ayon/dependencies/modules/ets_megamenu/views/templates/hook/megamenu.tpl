@@ -1,5 +1,5 @@
 {*
-* 2007-2018 ETS-Soft
+* 2007-2019 ETS-Soft
 *
 * NOTICE OF LICENSE
 *
@@ -14,7 +14,7 @@
 * needs, please contact us for extra customization service at an affordable price
 *
 *  @author ETS-Soft <etssoft.jsc@gmail.com>
-*  @copyright  2007-2018 ETS-Soft
+*  @copyright  2007-2019 ETS-Soft
 *  @license    Valid for 1 website (or project) for each purchase of license
 *  International Registered Trademark & Property of ETS-Soft
 *}
@@ -31,7 +31,10 @@
         {if isset($mm_layout_direction)&&$mm_layout_direction}{$mm_layout_direction|escape:'html':'UTF-8'}{else}ets-dir-ltr{/if}
         {if isset($mm_config.ETS_MM_HOOK_TO)&&$mm_config.ETS_MM_HOOK_TO=='customhook'}hook-custom{else}hook-default{/if}
         {if isset($mm_multiLayout)&&$mm_multiLayout}multi_layout{else}single_layout{/if}
-        ">
+        {if isset($mm_config.ETS_MM_STICKY_DISMOBILE) && $mm_config.ETS_MM_STICKY_DISMOBILE } disable_sticky_mobile {/if}
+        "
+        data-bggray="{if isset($mm_config.ETS_MM_ACTIVE_BG_GRAY)&&$mm_config.ETS_MM_ACTIVE_BG_GRAY}bg_gray{/if}"
+        >
         <div class="ets_mm_megamenu_content">
             <div class="container">
                 <div class="ets_mm_megamenu_content_content">

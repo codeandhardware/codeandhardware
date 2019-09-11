@@ -8,13 +8,15 @@
 {if isset($roythemes.nc_feat_width) && $roythemes.nc_feat_width == "2"} col-lg-6{/if}"
 data-auto="{$roythemes.nc_feat_auto}"
 data-max-slides="{$roythemes.nc_feat_per}">
-  <h2 class="h1 products-section-title text-uppercase">
-    <a href="{$allProductsLink}">
-      {l s='Popular Products' d='Shop.Theme.Catalog'}
-    </a>
-  </h2>
-  {if isset($roythemes.nc_hp_title) && $roythemes.nc_hp_title == "2"}
-    <div class="undertitle">{l s='These products are in trend this week. Pay attention to them' d='Shop.Theme.Catalog'}</div>
+  {if isset($roythemes.nc_hp_title) && $roythemes.nc_hp_title !== "3"}
+    <h2 class="h1 products-section-title text-uppercase">
+      <a href="{$allProductsLink}">
+        {l s='Popular Products' d='Shop.Theme.Catalog'}
+      </a>
+    </h2>
+    {if isset($roythemes.nc_hp_title) && $roythemes.nc_hp_title == "2"}
+      <div class="undertitle">{l s='These products are in trend this week. Pay attention to them' d='Shop.Theme.Catalog'}</div>
+    {/if}
   {/if}
   <div class="products">
     {foreach from=$products item="product" name="hp"}

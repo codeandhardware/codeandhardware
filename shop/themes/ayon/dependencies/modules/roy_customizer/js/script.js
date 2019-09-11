@@ -141,6 +141,18 @@ $(document).ready(function() {
 		$('head').append('<style id="f_textstyle" type="text/css">#textexample{ font-family:' + googlefont.split(':')[0] + ' !important; }</style>');
 	});
 
+	$('#f_menu').change(function(){
+	    var googlefont = $("option:selected", this).val();
+		var googlefontname = googlefont.split(';');
+		if ($('head').find('link#f_menulink').length < 1){
+			$('head').append('<link id="f_menulink" rel="stylesheet" type="text/css" href="" />');
+		}
+		$('link#f_menulink').attr({href:'//fonts.googleapis.com/css?family=' + googlefontname});
+
+		$("style#f_menustyle").remove();
+		$('head').append('<style id="f_menustyle" type="text/css">#menuexample{ font-family:' + googlefont.split(':')[0] + ' !important; }</style>');
+	});
+
 	$('#f_price').change(function(){
 	    var googlefont = $("option:selected", this).val();
 		var googlefontname = googlefont.split(';');

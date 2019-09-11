@@ -1,5 +1,5 @@
 {*
-* 2007-2018 ETS-Soft
+* 2007-2019 ETS-Soft
 *
 * NOTICE OF LICENSE
 *
@@ -14,31 +14,32 @@
 * needs, please contact us for extra customization service at an affordable price
 *
 *  @author ETS-Soft <etssoft.jsc@gmail.com>
-*  @copyright  2007-2018 ETS-Soft
+*  @copyright  2007-2019 ETS-Soft
 *  @license    Valid for 1 website (or project) for each purchase of license
 *  International Registered Trademark & Property of ETS-Soft
 *}
 <script type="text/javascript">
-    var mm_img_dir ='{$mm_img_dir|escape:'quotes':'UTF-8'}';
-    var mmBaseAdminUrl = '{$mmBaseAdminUrl|escape:'quotes':'UTF-8'}';
-    var mmCloseTxt = '{l s='Close' mod='ets_megamenu'}';
-    var mmOpenTxt = '{l s='Open' mod='ets_megamenu'}';
-    var mmDeleteTxt = '{l s='Delete' mod='ets_megamenu'}';
-    var mmEditTxt = '{l s='Edit' mod='ets_megamenu'}';
-    var mmDeleteTitleTxt = '{l s='Delete this item' mod='ets_megamenu'}';
-    var mmAddMenuTxt = '{l s='Add new menu' mod='ets_megamenu'}';
-    var mmEditMenuTxt = '{l s='Edit menu' mod='ets_megamenu'}';
-    var mmAddColumnTxt = '{l s='Add new column' mod='ets_megamenu'}';
-    var mmEditColumnTxt = '{l s='Edit column' mod='ets_megamenu'}';
-    var mmDeleteColumnTxt = '{l s='Delete this column' mod='ets_megamenu'}';
-    var mmDeleteBlockTxt = '{l s='Delete this block' mod='ets_megamenu'}';
-    var mmEditBlockTxt = '{l s='Edit this block' mod='ets_megamenu'}';
-    var mmAddBlockTxt = '{l s='Add new block' mod='ets_megamenu'}';
-    var mmDuplicateTxt = '{l s='Duplicate' mod='ets_megamenu'}';
-    var mmDuplicateMenuTxt = '{l s='Duplicate this menu' mod='ets_megamenu'}';
-    var mmDuplicateColumnTxt = '{l s='Duplicate this column' mod='ets_megamenu'}';
-    var mmDuplicateBlockTxt = '{l s='Duplicate this block' mod='ets_megamenu'}';
-    var ets_mm_invalid_file = '{l s='Image is invalid' mod='ets_megamenu'}';
+    var mm_img_dir ="{$mm_img_dir|escape:'quotes':'UTF-8'}";
+    var mmBaseAdminUrl = "{$mmBaseAdminUrl|escape:'quotes':'UTF-8'}";
+    var mmCloseTxt = "{l s='Close' mod='ets_megamenu'}";
+    var mmOpenTxt = "{l s='Open' mod='ets_megamenu'}";
+    var mmDeleteTxt = "{l s='Delete' mod='ets_megamenu'}";
+    var mmEditTxt = "{l s='Edit' mod='ets_megamenu'}";
+    var mmDeleteTitleTxt = "{l s='Delete this item' mod='ets_megamenu'}";
+    var mmAddMenuTxt = "{l s='Add new menu' mod='ets_megamenu'}";
+    var mmEditMenuTxt = "{l s='Edit menu' mod='ets_megamenu'}";
+    var mmAddColumnTxt = "{l s='Add new column' mod='ets_megamenu'}";
+    var mmEditColumnTxt = "{l s='Edit column' mod='ets_megamenu'}";
+    var mmDeleteColumnTxt = "{l s='Delete this column' mod='ets_megamenu'}";
+    var mmDeleteBlockTxt = "{l s='Delete this block' mod='ets_megamenu'}";
+    var mmEditBlockTxt = "{l s='Edit this block' mod='ets_megamenu'}";
+    var mmAddBlockTxt = "{l s='Add new block' mod='ets_megamenu'}";
+    var mmDuplicateTxt = "{l s='Duplicate' mod='ets_megamenu'}";
+    var mmDuplicateMenuTxt = "{l s='Duplicate this menu' mod='ets_megamenu'}";
+    var mmDuplicateColumnTxt = "{l s='Duplicate this column' mod='ets_megamenu'}";
+    var mmDuplicateBlockTxt = "{l s='Duplicate this block' mod='ets_megamenu'}";
+    var ets_mm_invalid_file = "{l s='Image is invalid' mod='ets_megamenu'}";
+    var mmLabelDelete = "{l s='Delete' mod='ets_megamenu'}";
 </script>
 <div class="ets_megamenu mm_view_mode_tab {if $mm_backend_layout=='rtl'}ets-dir-rtl backend-layout-rtl{else}ets-dir-ltr backend-layout-ltr{/if} {if $multiLayout}mm_multi_layout{else}mm_single_layout{/if}">
     <div class="mm_menus">
@@ -78,6 +79,7 @@
         <div class="mm_tab_form_new hidden">{$tabForm nofilter}</div>
         <div class="mm_column_form_new hidden">{$columnForm nofilter}</div>
         <div class="mm_block_form_new hidden">{$blockForm nofilter}</div>
+        <div class="mm_icon_form_new hidden">{$iconForm nofilter}</div>
     </div>
     <div class="mm_popup_overlay hidden">
         <div class="mm_config_form mm_pop_up">

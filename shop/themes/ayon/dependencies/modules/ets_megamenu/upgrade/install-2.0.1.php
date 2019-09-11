@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2018 ETS-Soft
+ * 2007-2019 ETS-Soft
  *
  * NOTICE OF LICENSE
  *
@@ -15,7 +15,7 @@
  * needs please contact us for extra customization service at an affordable price
  *
  *  @author ETS-Soft <etssoft.jsc@gmail.com>
- *  @copyright  2007-2018 ETS-Soft
+ *  @copyright  2007-2019 ETS-Soft
  *  @license    Valid for 1 website (or project) for each purchase of license
  *  International Registered Trademark & Property of ETS-Soft
  */
@@ -84,33 +84,36 @@ function upgrade_module_2_0_1($object)
           `title` varchar(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
         )
     ");
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `menu_open_new_tab` text NOT NULL  AFTER `custom_class`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `id_supplier` text NOT NULL  AFTER `custom_class`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `menu_img_link` text NOT NULL  AFTER `custom_class`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `menu_icon` varchar(222) NOT NULL  AFTER `custom_class`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `id_suppliers` varchar(222) NOT NULL  AFTER `id_categories`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `order_by_category` varchar(222) NOT NULL  AFTER `id_categories`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `order_by_manufacturers` varchar(222) NOT NULL  AFTER `id_manufacturers`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `order_by_suppliers` varchar(222) NOT NULL  AFTER `id_categories`');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` CHANGE `sub_menu_max_width` `sub_menu_max_width` VARCHAR(500) NOT NULL');    
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `display_tabs_in_full_width` varchar(50) NOT NULL');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `show_description` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `show_clock` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `display_mnu_img` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `display_mnu_name` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `display_mnu_inline` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `display_suppliers_img` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `display_suppliers_name` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_block` ADD COLUMN IF NOT EXISTS `display_suppliers_inline` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `enabled_vertical` INT(1) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `tab_item_width` varchar(50) NOT NULL ');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `menu_item_width` varchar(50) NOT NULL');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `background_image` varchar(222) NOT NULL');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `position_background` varchar(50) NOT NULL');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `menu_ver_text_color` varchar(50) NOT NULL');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `menu_ver_background_color` varchar(50) NOT NULL');
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` ADD COLUMN IF NOT EXISTS `menu_ver_hidden_border` varchar(50) NOT NULL'); 
-    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_column` ADD COLUMN IF NOT EXISTS `id_tab` INT(11) NOT NULL');
+    Db::getInstance()->execute('ALTER TABLE `'._DB_PREFIX_.'ets_mm_menu` CHANGE `sub_menu_max_width` `sub_menu_max_width` VARCHAR(500) NOT NULL');
+    Db::getInstance()->execute(
+        $object->alterSQL('ets_mm_menu','menu_open_new_tab', 'text NOT NULL  AFTER `custom_class`').
+        $object->alterSQL('ets_mm_menu','id_supplier', 'text NOT NULL  AFTER `custom_class`').
+        $object->alterSQL('ets_mm_menu','menu_img_link', 'text NOT NULL  AFTER `custom_class`').
+        $object->alterSQL('ets_mm_menu','menu_icon', 'varchar(222) NOT NULL  AFTER `custom_class`').
+        $object->alterSQL('ets_mm_block','id_suppliers', 'varchar(222) NOT NULL  AFTER `id_categories`').
+        $object->alterSQL('ets_mm_block','order_by_category', 'varchar(222) NOT NULL  AFTER `id_categories`').
+        $object->alterSQL('ets_mm_block','order_by_manufacturers', 'varchar(222) NOT NULL  AFTER `id_manufacturers`').
+        $object->alterSQL('ets_mm_block','order_by_suppliers', 'varchar(222) NOT NULL  AFTER `id_categories`').
+        $object->alterSQL('ets_mm_menu','display_tabs_in_full_width', 'varchar(50) NOT NULL').
+        $object->alterSQL('ets_mm_block','show_description', 'INT(1) NOT NULL').
+        $object->alterSQL('ets_mm_block','show_clock', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_block','display_mnu_img', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_block','display_mnu_name', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_block','display_mnu_inline', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_block','display_suppliers_img', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_block','display_suppliers_name', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_block','display_suppliers_inline', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','enabled_vertical', 'INT(1) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','tab_item_width', 'varchar(50) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','menu_item_width', 'varchar(50) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','background_image', 'varchar(50) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','position_background', 'varchar(50) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','menu_ver_text_color', 'varchar(50) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','menu_ver_background_color', 'varchar(50) NOT NULL ').
+        $object->alterSQL('ets_mm_menu','menu_ver_hidden_border', 'varchar(50) NOT NULL ').
+        $object->alterSQL('ets_mm_column','id_tab', 'INT(11) NOT NULL')
+    );
+
     $menus=Db::getInstance()->executeS('SELECT * FROM '._DB_PREFIX_.'ets_mm_menu WHERE id_menu NOT IN (SELECT id_menu FROM '._DB_PREFIX_.'ets_mm_menu_shop)');
     if($menus)
     {

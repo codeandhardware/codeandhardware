@@ -6,15 +6,16 @@
           <span class="text hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
           <span class="cart-products-count{if $cart.products_count < 1} hidden{/if}">{$cart.products_count}</span>
           {if $cart.products_count > 0}
-            <span class="tip">Open Shopping cart</span>
+            <span class="tip">{l s='Open Shopping cart' d='Modules.Shoppingcart.Shop'}</span>
           {else}
-            <span class="tip">Cart is empty</span>
+            <span class="tip">{l s='Cart is empty.' d='Modules.Shoppingcart.Shop'}</span>
           {/if}
         </a>
     </div>
 
     <div class="cart_inside">
-      <h4 class="side_title">{l s='Shopping Cart' d='Shop.Theme.Actions'}</h4>
+      <h4 class="side_title">{l s='Shopping Cart' d='Modules.Shoppingcart.Shop'}</h4>
+      <span class="metahide">{l s='Back to shop' d='Modules.Shoppingcart.Shop'}</span>
       <span class="close_cross"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></i></span>
       {if $cart.products_count > 0}
         <ul class="cart-prods">
@@ -48,16 +49,16 @@
             {/foreach}
           </div>
           <div class="cart-checkout">
-            <a href="{$cart_url}" class="btn btn-primary btn-high">{l s='Checkout' d='Shop.Theme.Actions'}</a>
+            <a href="{$cart_url}" class="btn btn-primary btn-high">{l s='Shopping Cart' d='Modules.Shoppingcart.Shop'}</a>
           </div>
         </div>
       {else}
         <div class="shopping-cart empty">
-          <p class="text-center">{l s='The cart is empty.' d='Shop.Theme.Actions'}</p>
+          <p class="text-center">{l s='Cart is empty.' d='Modules.Shoppingcart.Shop'}</p>
           <i></i>
         </div>
         <div class="cart-checkout">
-          <button class="btn btn-primary btn-high return">{l s='Back to shop' d='Shop.Theme.Actions'}</button>
+          <button class="btn btn-primary btn-high return">{l s='Back to shop' d='Modules.Shoppingcart.Shop'}</button>
         </div>
       {/if}
     </div>

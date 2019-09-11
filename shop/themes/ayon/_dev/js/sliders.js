@@ -15,9 +15,15 @@ $(document).on('ready', function(){
         autoPlay: hasAuto,
         contain: true,
         draggable:1,
-        prevNextButtons: false,
+        prevNextButtons: true,
         pageDots: false,
-        cellAlign: 'left'
+        cellAlign: 'left',
+        arrowShape: {
+          x0: 20,
+          x1: 60, y1: 50,
+          x2: 75, y2: 50,
+          x3: 35
+        }
       })
     });
 
@@ -26,34 +32,59 @@ $(document).on('ready', function(){
       autoPlay: 4400,
       contain: true,
       draggable:1,
-      prevNextButtons: false,
-      pageDots: false
+      prevNextButtons: true,
+      imagesLoaded: true,
+      pageDots: false,
+      arrowShape: {
+        x0: 20,
+        x1: 60, y1: 50,
+        x2: 75, y2: 50,
+        x3: 35
+      }
     });
 
     // Brands slider
     $('.roy_brands_ul').flickity({
       contain: true,
       draggable:1,
-      prevNextButtons: false,
+      prevNextButtons: true,
       pageDots: false,
-      cellAlign: 'left'
+      cellAlign: 'left',
+      arrowShape: {
+        x0: 20,
+        x1: 60, y1: 50,
+        x2: 75, y2: 50,
+        x3: 35
+      }
     });
 
     // Blog Latest posts slider
     $('.blogslider').flickity({
       contain: true,
       draggable:1,
-      prevNextButtons: false,
-      pageDots: false
+      prevNextButtons: true,
+      pageDots: false,
+      arrowShape: {
+        x0: 20,
+        x1: 60, y1: 50,
+        x2: 75, y2: 50,
+        x3: 35
+      }
     });
 
     // Product page products sliders
     $('#product .products').flickity({
       draggable:1,
-      prevNextButtons: false,
+      prevNextButtons: true,
       pageDots: false,
-      cellAlign: 'left',
-      contain: true
+      cellAlign: 'center',
+      contain: true,
+      arrowShape: {
+        x0: 20,
+        x1: 60, y1: 50,
+        x2: 75, y2: 50,
+        x3: 35
+      }
     });
   }
 

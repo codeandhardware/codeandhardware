@@ -34,7 +34,8 @@
       >
         <link itemprop="availability" href="https://schema.org/InStock"/>
         <meta itemprop="priceCurrency" content="{$currency.iso_code}">
-
+        <meta itemprop="url" content="{$product.url}">
+        {if isset($product.specific_prices.to)}<meta itemprop="priceValidUntil" content="{$product.specific_prices.to}">{/if}
 
         {if $product.has_discount}
           <div class="product-discount">

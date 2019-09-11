@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2018 ETS-Soft
+ * 2007-2019 ETS-Soft
  *
  * NOTICE OF LICENSE
  *
@@ -15,7 +15,7 @@
  * needs please contact us for extra customization service at an affordable price
  *
  *  @author ETS-Soft <etssoft.jsc@gmail.com>
- *  @copyright  2007-2018 ETS-Soft
+ *  @copyright  2007-2019 ETS-Soft
  *  @license    Valid for 1 website (or project) for each purchase of license
  *  International Registered Trademark & Property of ETS-Soft
  */
@@ -49,7 +49,10 @@ class MM_Block extends MM_Obj
     public $display_title;
     public $id_column;
     public $image_link;
+	public $product_type;
     public $id_products;
+    public $product_count;
+    public $combination_enabled;
     public $show_description;
     public $show_clock;
     public static $definition = array(
@@ -71,8 +74,10 @@ class MM_Block extends MM_Obj
             'display_suppliers_img' => array('type' => self::TYPE_INT),
             'display_suppliers_name' => array('type' => self::TYPE_INT),
             'display_suppliers_inline' => array('type' => self::TYPE_STRING),
-            'id_cmss' => array('type' => self::TYPE_STRING),  
-            'id_products' => array('type' => self::TYPE_STRING),            
+            'id_cmss' => array('type' => self::TYPE_STRING),
+			'product_type' => array('type' => self::TYPE_STRING),
+            'id_products' => array('type' => self::TYPE_STRING),
+			'product_count' => array('type' => self::TYPE_INT),
             'enabled' => array('type' => self::TYPE_INT),
             'image' => array('type' => self::TYPE_STRING,'lang' => false),
             'block_type' => array('type' => self::TYPE_STRING),

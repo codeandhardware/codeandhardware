@@ -192,31 +192,31 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_
         <source>This pack contains</source>
         <target>Ten pakiet zawiera</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:138</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:141</note>
       </trans-unit>
       <trans-unit id="b5a7adde1af5c87d7fd797b6245c2a39">
         <source>Description</source>
         <target>Opis</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:181</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:184</note>
       </trans-unit>
       <trans-unit id="b8900d8adf598b6653bb8c071bc49a1d">
         <source>Product Details</source>
         <target>Szczegóły produktu</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:192</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:195</note>
       </trans-unit>
       <trans-unit id="7e2708aeb65763c54052f57ed1a1ec1d">
         <source>Attachments</source>
         <target>Załączniki</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:202</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:205</note>
       </trans-unit>
       <trans-unit id="3767d4f3efe17bd95a1bc7cf4194bb93">
         <source>You might also like</source>
         <target>Zobacz także</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:264</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/product.tpl:267</note>
       </trans-unit>
     </body>
   </file>
@@ -226,43 +226,43 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/p
         <source>Discount -%percentage%</source>
         <target>Discount -%percentage%</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:50</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:51</note>
       </trans-unit>
       <trans-unit id="200aef385fcacac2cb5ca53566ba3466">
         <source>Discount -%amount%</source>
         <target>Discount -%amount%</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:53</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:54</note>
       </trans-unit>
       <trans-unit id="48fa315ec57b5fea80176d1c5f9f6bbf">
         <source>(%unit_price%)</source>
         <target>(%unit_price%)</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:60</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:61</note>
       </trans-unit>
       <trans-unit id="e532954941a2469e3b3ae35ce44885d6">
         <source>%price% tax excl.</source>
         <target>%price% netto</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:68</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:69</note>
       </trans-unit>
       <trans-unit id="a72a454b308052ed277f7b69ab307caa">
         <source>Instead of %price%</source>
         <target>Zamiast %price%</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:74</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:75</note>
       </trans-unit>
       <trans-unit id="98508b5a9b590896cc627beb46d86b96">
         <source>Including %amount% for ecotax</source>
         <target>W tym %amount% ekopodatku</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:80</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:81</note>
       </trans-unit>
       <trans-unit id="a134618182b99ff9151d7e0b6b92410a">
         <source>(not impacted by the discount)</source>
         <target>(nie pomniejszony o rabat)</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:82</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/templates/catalog/_partials/product-prices.tpl:83</note>
       </trans-unit>
     </body>
   </file>
@@ -384,13 +384,13 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_searchba
         <source>Best Sellers</source>
         <target>Najczęściej Kupowane</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_bestsellers/views/templates/hook/ps_bestsellers.tpl:13</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_bestsellers/views/templates/hook/ps_bestsellers.tpl:14</note>
       </trans-unit>
       <trans-unit id="712944376fa20393da5dcc6948818b72">
         <source>There are top sellers! Check the people choice</source>
         <target>There are top sellers! Check the people choice</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_bestsellers/views/templates/hook/ps_bestsellers.tpl:17</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_bestsellers/views/templates/hook/ps_bestsellers.tpl:18</note>
       </trans-unit>
     </body>
   </file>
@@ -428,13 +428,13 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_producti
         <source>Popular Products</source>
         <target>Popularne produkty</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl:13</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl:14</note>
       </trans-unit>
       <trans-unit id="da0e882e5a7a2819cf3a2311685c7279">
         <source>These products are in trend this week. Pay attention to them</source>
         <target>These products are in trend this week. Pay attention to them</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl:17</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl:18</note>
       </trans-unit>
     </body>
   </file>
@@ -444,13 +444,13 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_featured
         <source>New products</source>
         <target>Nowe produkty</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_newproducts/views/templates/hook/ps_newproducts.tpl:13</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_newproducts/views/templates/hook/ps_newproducts.tpl:14</note>
       </trans-unit>
       <trans-unit id="8743461aa164730c45985635dff63a3f">
         <source>here are new arrivals! See what is fresh in our shop</source>
         <target>here are new arrivals! See what is fresh in our shop</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_newproducts/views/templates/hook/ps_newproducts.tpl:17</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_newproducts/views/templates/hook/ps_newproducts.tpl:18</note>
       </trans-unit>
     </body>
   </file>
@@ -460,13 +460,13 @@ File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_newprodu
         <source>On sale</source>
         <target>Wyprzedaż</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_specials/views/templates/hook/ps_specials.tpl:13</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_specials/views/templates/hook/ps_specials.tpl:14</note>
       </trans-unit>
       <trans-unit id="dea5dfdc708e3c242126dc8d486fa213">
         <source>There are our discounts for this spring! Up to 30%!</source>
         <target>There are our discounts for this spring! Up to 30%!</target>
         <note>Context:
-File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_specials/views/templates/hook/ps_specials.tpl:17</note>
+File: /home/roy/public_html/demo/ayon/17/neptune/themes/ayon/modules/ps_specials/views/templates/hook/ps_specials.tpl:18</note>
       </trans-unit>
     </body>
   </file>

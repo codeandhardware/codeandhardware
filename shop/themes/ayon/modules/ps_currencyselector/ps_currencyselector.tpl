@@ -27,7 +27,7 @@
   <div class="currency-selector dropdown js-dropdown">
     <span id="currency-selector-label" class="currency-selector-label">{l s='Currency:' d='Shop.Theme.Global'}</span>
     <button data-target="#" data-toggle="dropdown" class="hidden-sm-down btn-unstyle" aria-haspopup="true" aria-expanded="false" aria-label="{l s='Currency dropdown' d='Shop.Theme.Global'}">
-      <span class="expand-more _gray-darker">{$current_currency.sign} {$current_currency.iso_code}</span>
+      <span class="expand-more _gray-darker">{$current_currency.sign} {if isset($roythemes.nc_cll) && $roythemes.nc_cll == "1"}{$current_currency.iso_code}{/if}</span>
       <i class="material-icons expand-more">&#xE5C5;</i>
     </button>
     <ul class="dropdown-menu hidden-sm-down" aria-labelledby="currency-selector-label">

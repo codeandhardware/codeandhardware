@@ -41,7 +41,7 @@
     <div class="product-manufacturer tip_inside">
       <a href="{$product_brand_url}" class="noeffect">
           <label class="label">{l s='Brand' d='Shop.Theme.Catalog'}</label>
-          <span>
+          <span itemprop="brand">
             {$product_manufacturer->name}
           </span>
           <div class="clearflex"></div>

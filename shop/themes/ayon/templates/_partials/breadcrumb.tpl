@@ -6,7 +6,7 @@
           {if $smarty.foreach.breadcrumb.last}
             {$path.title}
           {/if}
-        {/foreach}</span> 
+        {/foreach}</span>
       <ol itemscope itemtype="http://schema.org/BreadcrumbList">
         {foreach from=$breadcrumb.links item=path name=breadcrumb}
           {block name='breadcrumb_item'}
@@ -15,6 +15,7 @@
                 <a itemprop="item" href="{$path.url}">
               {/if}
                   <span itemprop="name">{$path.title}</span>
+                  <a itemprop="item" href="#"></a>
               {if !$smarty.foreach.breadcrumb.last}
                 </a>
               {/if}

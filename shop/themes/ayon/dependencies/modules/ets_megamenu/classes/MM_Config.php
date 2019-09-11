@@ -1,6 +1,6 @@
 <?php
 /**
- * 2007-2018 ETS-Soft
+ * 2007-2019 ETS-Soft
  *
  * NOTICE OF LICENSE
  *
@@ -15,7 +15,7 @@
  * needs please contact us for extra customization service at an affordable price
  *
  *  @author ETS-Soft <etssoft.jsc@gmail.com>
- *  @copyright  2007-2018 ETS-Soft
+ *  @copyright  2007-2019 ETS-Soft
  *  @license    Valid for 1 website (or project) for each purchase of license
  *  International Registered Trademark & Property of ETS-Soft
  */
@@ -114,20 +114,20 @@ class MM_Config
         {
             if($configs)
             {
-                    foreach($configs as $key => $config)
+                foreach($configs as $key => $config)
+                {
+                    if(isset($config['lang']) && $config['lang'])
                     {
-                        if(isset($config['lang']) && $config['lang'])
-                        {                    
-                            foreach($languages as $l)
-                            {
-                                $fields[$key][$l['id_lang']] = Configuration::get($key,$l['id_lang']);
-                            }
+                        foreach($languages as $l)
+                        {
+                            $fields[$key][$l['id_lang']] = Configuration::get($key,$l['id_lang']);
                         }
-                        else
-                            $fields[$key] = Configuration::get($key);                   
                     }
+                    else
+                        $fields[$key] = Configuration::get($key);
+                }
             }
-        }           
+        }
         $helper->tpl_vars = array(
 			'base_url' => Context::getContext()->shop->getBaseURL(),
 			'language' => array(
@@ -290,11 +290,12 @@ class MM_Config
             }
         return $data;
     }
-    public function installConfigs()
+    public function installConfigs($upgrade = false)
     {
         $configs = $this->fields['configs']; 
         $languages = Language::getLanguages(false);
         if($configs)
+        {
             foreach($configs as $key => $config)
             {
                 if(isset($config['lang']) && $config['lang'])
@@ -304,12 +305,19 @@ class MM_Config
                     {
                         $values[$lang['id_lang']] = isset($config['default']) ? $config['default'] : '';
                     }
-                    Configuration::updateValue($key, $values,true);
+                    if ($upgrade &&  !Configuration::hasKey($key) || !$upgrade)
+                    {
+                        Configuration::updateValue($key, $values, true);
+                    }
                 }
-                else
+                elseif ($upgrade &&  !Configuration::hasKey($key) || !$upgrade)
+                {
                     Configuration::updateValue($key, isset($config['default']) ? $config['default'] : '',true);
+                }
             }
-    } 
+        }
+        return true;
+    }
     public function unInstallConfigs()
     {
         if($this->fields['configs'])

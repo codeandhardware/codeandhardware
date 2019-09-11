@@ -1,1 +1,16 @@
-<div class="col-12 tb_p">Call Center: +507 399-2533 | Email: Ventas@codeandhardware.com  <span class="pull-right">Social</span></div>
+<div id="_desktop_contact_phone">
+  <div id="contact_phone" class="contact-link">
+    {if $contact_infos.phone}
+      {* [1][/1] is for a HTML tag. *}
+      {l
+        s='Call us: [1]%phone%[/1]'
+        sprintf=[
+          '[1]' => '<span>',
+          '[/1]' => '</span>',
+          '%phone%' => $contact_infos.phone
+        ]
+        d='Shop.Theme.Global'
+      }
+    {/if}
+  </div>
+</div>

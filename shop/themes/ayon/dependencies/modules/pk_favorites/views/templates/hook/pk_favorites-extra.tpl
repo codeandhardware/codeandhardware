@@ -33,7 +33,7 @@
   </a>
   {if !$customer.is_logged}
     <div class="alert_note">
-      {l s='Debes iniciar sesion' mod='pk_favorites'}
+      {l s='You must be logged in' mod='pk_favorites'}
       <p class="login_links">
           <a class="inline" href="{$link->getPageLink('my-account', true)}">{l s='Sign in' d='Shop.Theme.Actions'}</a> | <a class="inline" href="{$link->getPageLink('my-account', true)}">{l s='Register' d='Modules.Customersignin.Shop'}</a>
       </p>
