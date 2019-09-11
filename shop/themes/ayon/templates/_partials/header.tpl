@@ -109,7 +109,7 @@ account_circle
 
         {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4")}
         <div class="head_menu">
-         MENU {hook h='displayMegaMenu'}
+          <div clas="container"> <span class="pull-left">MENU//</span> {hook h='displayMegaMenu'} </div>
         </div>
         {/if}
 
