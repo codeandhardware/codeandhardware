@@ -1,1 +1,1 @@
-<div class="col-12 tb_p">left <span class="pull-right">right</span></div>
+<div class="col-12 tb_p">Call Center: +507 399-2533 | Email: Ventas@codeandhardware.com  <span class="pull-right">Social</span></div>
