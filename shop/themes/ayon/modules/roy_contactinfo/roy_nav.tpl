@@ -1,8 +1,12 @@
 <div id="_desktop_contact_phone">
   <div id="contact_phone" class="contact-link">
-
-<div class="col-md-6">Call Center: +507 399-2533 | Email: Ventas@codeandhardware.com</div>
-  <div class="col-md-6 pull-right">Social Media</div>
-  
+    <div class="row">
+      <div class="col-lg-6 col-md-6">elements 1</div>
+      <div class="col-lg-6 col-md-6">
+           <div class="pull-right">
+              elements 2
+           </div>
+      </div>
+  </div>
   </div>
 </div>
