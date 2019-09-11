@@ -19,6 +19,21 @@ account_circle
   <div class="header-top">
     <div class="container">
 <div class="row">
+
+    {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4" || $roythemes.header_lay == "6")}
+           
+    <div class="head_logo" id="_desktop_logo pull-left">
+      <a href="{$urls.base_url}">
+        <img class="logo logo-normal img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-normal-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_normal_ext)}{$roythemes.nc_logo_normal_ext}{else}png{/if}" alt="{$shop.name}">
+        <img class="logo logo-trans img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-trans-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_trans_ext)}{$roythemes.nc_logo_trans_ext}{else}png{/if}" alt="{$shop.name}">
+      </a>
+      {if isset($roythemes.header_lay) && ($roythemes.header_lay == "3")}
+       {block name='acc_top'}
+         {include file="_partials/acc.tpl"}
+       {/block}
+      {/if}
+    </div>
+
        <div class="row action header_lay{if isset($roythemes.header_lay)}{$roythemes.header_lay}{/if}">
          {if isset($roythemes.header_lay) && ($roythemes.header_lay !== "4" && $roythemes.header_lay !== "6")}
             <div class="head_logo" id="_desktop_logo">
@@ -63,19 +78,7 @@ account_circle
             </div>
           {/if}
 
-          {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4" || $roythemes.header_lay == "6")}
-           
-            <div class="head_logo" id="_desktop_logo">
-              <a href="{$urls.base_url}">
-                <img class="logo logo-normal img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-normal-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_normal_ext)}{$roythemes.nc_logo_normal_ext}{else}png{/if}" alt="{$shop.name}">
-                <img class="logo logo-trans img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-trans-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_trans_ext)}{$roythemes.nc_logo_trans_ext}{else}png{/if}" alt="{$shop.name}">
-              </a>
-              {if isset($roythemes.header_lay) && ($roythemes.header_lay == "3")}
-               {block name='acc_top'}
-                 {include file="_partials/acc.tpl"}
-               {/block}
-              {/if}
-            </div>
+ 
             <div class="head_action">
               <ul>
                 {if isset($roythemes.header_lay) && ($roythemes.header_lay == "6")}
