@@ -103,10 +103,11 @@ account_circle
             </div>
           {/if}
 
-          <div class="row">   <div class="head_menu">
-            {hook h='displayMegaMenu'}
-          </div></div>
+          
         </div>
+        <div class="container"><div class="head_menu">
+          {hook h='displayMegaMenu'}
+        </div></div>
 
         {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4")}
         <div class="head_menu">
