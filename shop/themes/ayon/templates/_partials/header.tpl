@@ -22,7 +22,7 @@ account_circle
 
     {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4" || $roythemes.header_lay == "6")}
            
-    <div class="head_logo pull-left" id="_desktop_logo">
+    <div class="head_logo pull-left mt-l" id="_desktop_logo">
       <a href="{$urls.base_url}">
         <img class="logo logo-normal img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-normal-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_normal_ext)}{$roythemes.nc_logo_normal_ext}{else}png{/if}" alt="{$shop.name}">
         <img class="logo logo-trans img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-trans-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_trans_ext)}{$roythemes.nc_logo_trans_ext}{else}png{/if}" alt="{$shop.name}">
