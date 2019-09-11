@@ -64,16 +64,7 @@ account_circle
           {/if}
 
           {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4" || $roythemes.header_lay == "6")}
-            <div class="head_action">
-              <ul>
-                {if isset($roythemes.header_lay) && ($roythemes.header_lay == "6")}
-                  {block name='menu_top'}
-                    {include file="_partials/menu.tpl"}
-                  {/block}
-                {/if}
-                <li>{widget name="ps_searchbar"}</li>
-              </ul>
-            </div>
+           
             <div class="head_logo" id="_desktop_logo">
               <a href="{$urls.base_url}">
                 <img class="logo logo-normal img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-normal-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_normal_ext)}{$roythemes.nc_logo_normal_ext}{else}png{/if}" alt="{$shop.name}">
@@ -84,6 +75,16 @@ account_circle
                  {include file="_partials/acc.tpl"}
                {/block}
               {/if}
+            </div>
+            <div class="head_action">
+              <ul>
+                {if isset($roythemes.header_lay) && ($roythemes.header_lay == "6")}
+                  {block name='menu_top'}
+                    {include file="_partials/menu.tpl"}
+                  {/block}
+                {/if}
+                <li>{widget name="ps_searchbar"}</li>
+              </ul>
             </div>
             <div class="head_action">
               <ul>
