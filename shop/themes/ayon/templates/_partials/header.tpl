@@ -31,9 +31,7 @@ account_circle
               {/if}
             </div>
             {if isset($roythemes.header_lay) && ($roythemes.header_lay !== "5")}
-            <div class="head_menu">
-              {hook h='displayMegaMenu'}
-            </div>
+          
             {/if}
             <div class="head_action">
               <ul>
@@ -104,6 +102,10 @@ account_circle
               </ul>
             </div>
           {/if}
+
+          <div class="row">   <div class="head_menu">
+            {hook h='displayMegaMenu'}
+          </div></div>
         </div>
 
         {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4")}
