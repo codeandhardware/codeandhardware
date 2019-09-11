@@ -18,7 +18,7 @@ account_circle
 {block name='header_top'}
   <div class="header-top">
     <div class="container">
-
+<div class="row">
        <div class="row action header_lay{if isset($roythemes.header_lay)}{$roythemes.header_lay}{/if}">
          {if isset($roythemes.header_lay) && ($roythemes.header_lay !== "4" && $roythemes.header_lay !== "6")}
             <div class="head_logo" id="_desktop_logo">
@@ -106,7 +106,7 @@ account_circle
             </div>
           {/if}
         </div>
-
+      </div>
         {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4")}
         <div class="head_menu">
           <div clas="container"> <span class="pull-left">MENU//</span> {hook h='displayMegaMenu'} </div>
