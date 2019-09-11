@@ -1,1 +1,1 @@
-<div class="col-12 pt-1">left <span class="pull-right">right</span></div>
+<div class="col-12 tb_p">left <span class="pull-right">right</span></div>
