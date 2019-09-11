@@ -7,16 +7,7 @@
     <nav class="header-nav hidden-md-down">
       <div class="container">
         <div class="row">
-          {if isset($roythemes.nc_toppanel_lay)}
-            {if $roythemes.nc_toppanel_lay !== "1"}
-              <div class="col-md-3 col-xs-3 curlan">
-                {hook h='displayNav1'}
-              </div>
-            {/if}
-              <div class="col-md-{if $roythemes.nc_toppanel_lay == "1"}12{else}9{/if} roycon">
-                {hook h='displayHeaderContent'}
-              </div>
-          {/if}
+          texto aqui
         </div>
       </div>
     </nav>
