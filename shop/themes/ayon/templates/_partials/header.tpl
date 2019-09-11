@@ -5,7 +5,9 @@
 {if isset($roythemes.header_ns) && ($roythemes.header_ns == "1")}
   {block name='header_nav'}
     <nav class="header-nav hidden-md-down">
-    texto aca
+      <div class="container">
+     <div class="col-12">izquierda<span class="pull-right">derecha</span></div>
+      </div>
     </nav>
   {/block}
 {/if}
