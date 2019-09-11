@@ -5,8 +5,8 @@
 {if isset($roythemes.header_ns) && ($roythemes.header_ns == "1")}
   {block name='header_nav'}
     <nav class="header-nav hidden-md-down">
-      <div class="container">
-     <div class="col-12">izquierda<span class="pull-right">derecha</span></div>
+      <div class="container tb-p">
+     <div class="col-12">Call center: +507 399-2533 | Email: ventas@codeandhardware.com<span class="pull-right">Social Media:</span></div>
       </div>
     </nav>
   {/block}
