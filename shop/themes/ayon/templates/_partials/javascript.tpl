@@ -37,5 +37,6 @@
     {foreach from=$vars key=var_name item=var_value}
     var {$var_name} = {$var_value|json_encode nofilter};
     {/foreach}
-  </script>
+  </script> 
+  <script src="//code.tidio.co/32p33hi88odwwynxfr6vity3yck0bbnz.js"></script>
 {/if}
