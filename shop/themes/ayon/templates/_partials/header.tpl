@@ -15,12 +15,12 @@
 
 {block name='header_top'}
   <div class="header-top">
-    <div class="container">
-<div class="row">
+    <div class="container-fluid">
+<div class="row" style="box-shadow: 0 2px 12px 3px rgba(234,236,239,.8);">
 
     {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4" || $roythemes.header_lay == "6")}
            
-    <div class="head_logo pull-left mt-l" id="_desktop_logo">
+    <div class="head_logo pull-left ml-3 mt-l" id="_desktop_logo">
       <a href="{$urls.base_url}">
         <img class="logo logo-normal img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-normal-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_normal_ext)}{$roythemes.nc_logo_normal_ext}{else}png{/if}" alt="{$shop.name}">
         <img class="logo logo-trans img-responsive" src="{$urls.base_url}modules/roy_customizer/upload/logo-trans-{Context::getContext()->shop->id}.{if isset($roythemes.nc_logo_trans_ext)}{$roythemes.nc_logo_trans_ext}{else}png{/if}" alt="{$shop.name}">
