@@ -15,8 +15,8 @@
 
 {block name='header_top'}
   <div class="header-top">
-    <div class="container-fluid">
-<div class="row" style="box-shadow: 0 2px 12px 3px rgba(234,236,239,.8);">
+    <div class="row" style="box-shadow: 0 2px 12px 3px rgba(234,236,239,.8);">
+<div class="container-fluid">
 
     {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4" || $roythemes.header_lay == "6")}
            
