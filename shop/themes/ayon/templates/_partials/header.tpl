@@ -4,7 +4,7 @@
 
 {if isset($roythemes.header_ns) && ($roythemes.header_ns == "1")}
   {block name='header_nav'}
-    <nav class="header-nav hidden-md-down">
+    <nav class="header-nav hidden-md-down container">
       <div class="container tb-p">
      <div class="col-12">Call center: +507 399-2533 | Email: ventas@codeandhardware.com<span class="pull-right">codeandhardware.com</span></div>
       </div>
@@ -15,8 +15,8 @@
 
 {block name='header_top'}
   <div class="header-top">
-    <div class="row" style="box-shadow: 0 2px 12px 3px rgba(234,236,239,.8);">
-<div class="container-fluid">
+    <div class="row">
+<div class="container">
 
     {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4" || $roythemes.header_lay == "6")}
            
@@ -110,7 +110,7 @@
       </div>
         {if isset($roythemes.header_lay) && ($roythemes.header_lay == "4")}
         <div class="head_menu">
-          <div clas="container"> <span class="pull-left">MENU//</span> {hook h='displayMegaMenu'} </div>
+          <div clas="container">{hook h='displayMegaMenu'} </div>
         </div>
         {/if}
 
