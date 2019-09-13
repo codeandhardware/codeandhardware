@@ -14,7 +14,7 @@
 
 
 {block name='header_top'}
-  <div class="header-top container" style="box-shadow: 0 2px 12px 3px rgba(234,236,239,.8);">
+  <div class="header-top container">
     <div class="row">
 <div class="container">
 
