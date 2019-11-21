@@ -1,235 +1,369 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{CodeAndHardware} Development and resources.</title>
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{CodeAndHardware} Development and resources.</title>
+  <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <style lang="">
-   @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
-.more-pens {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  z-index: 10;
-  font-family: "Montserrat";
-  font-size: 12px;
-}
+    body {
+      font-family: 'Comfortaa', cursive;
+      background: #fff;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #E4E8F2, #fff);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #E4E8F2, #fff);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
 
-a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
-  font-family: "Montserrat";
-  font-size: 12px;
-  text-decoration: none;
-  background: #212121;
-  padding: 4px 8px;
-  color: #f7f7f7;
-}
-a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
-  background: #edf3f8;
-  color: #212121;
-}
+    h1.major,
+    h2.major,
+    h3.major,
+    h4.major,
+    h5.major,
+    h6.major {
+      padding-bottom: 1em;
+      border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+      margin-bottom: 20px;
+    }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background: #1B1B38;
-}
+    a {
+      color: #33A9B7;
+    }
 
-.title {
-  z-index: 10;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-family: "Montserrat";
-  text-align: center;
-  width: 100%;
-}
-.title h1 {
-  position: relative;
-  color: #EEEEEE;
-  font-weight: 600;
-  font-size: 60px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  text-shadow: 0 0 30px #000155;
-}
-.title h1 span {
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
-  color: #BBB;
-}
-.title h3 {
-  font-weight: 200;
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  color: #EEEEEE;
-  letter-spacing: 2px;
-  text-shadow: 0 0 30px #000155;
-}
+    #typer-size {
+      font-size: 40px;
+    }
 
+    a:hover,
+    a:focus {
+      color: #00E4FF;
+      text-decoration: none;
+    }
+
+    header {
+      display: table;
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      color: #262626;
+    }
+
+    header #particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    header .vert-text {
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    header .vert-text h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 30px;
+      font-weight: 100;
+    }
+
+    header .vert-text .scroll-down {
+      display: block;
+      position: absolute;
+      bottom: 12%;
+      left: 50%;
+      color: #fff;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+    }
+
+    header .vert-text .scroll-down:hover {
+      opacity: 0.5;
+    }
+
+    header .vert-text .scroll-down::after {
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+    }
+
+    header .vert-text .scroll-down::before {
+      position: absolute;
+      top: -22px;
+      left: -22px;
+      z-index: -1;
+      content: '';
+      width: 44px;
+      height: 44px;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+      border-radius: 100%;
+      opacity: 0;
+      -webkit-animation: sdb 3s infinite;
+      animation: sdb 3s infinite;
+      box-sizing: border-box;
+    }
+
+    .green-txt {
+      color: #009580;
+
+    }
   </style>
-    <link rel="stylesheet" href="src/css/animate.css">
-    <script src="//code.tidio.co/32p33hi88odwwynxfr6vity3yck0bbnz.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+  <link rel="stylesheet" href="src/css/animate.css">
+  <script src="//code.tidio.co/32p33hi88odwwynxfr6vity3yck0bbnz.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="title">
-    <img class="animated fadeInDown" src="https://codeandhardware.com/shop/modules/roy_customizer/upload/logo-footer-1.png"></img><br><br>
-       <h3 class="animated fadeInUp">Proximamente</h3>
-     </div>
-     <script>
-   let max_particles    = 500;
-let particles        = [];
-let frequency        = 5;
-let init_num         = max_particles;
-let max_time         = frequency*max_particles;
-let time_to_recreate = false;
 
-// Enable repopolate
-setTimeout(function(){
-  time_to_recreate = true;
-}.bind(this), max_time)
-
-// Popolate particles
-popolate(max_particles);
-
-var tela = document.createElement('canvas');
-    tela.width = $(window).width();
-    tela.height = $(window).height();
-    $("body").append(tela);
-
-var canvas = tela.getContext('2d');
-
-class Particle{
-  constructor(canvas){
-    let random = Math.random()
-    this.progress = 0;
-    this.canvas = canvas;
-    this.center = {
-      x: $(window).width()/2,
-      y: $(window).height()/2
-    }
-    this.point_of_attraction = {
-      x: $(window).width()/2,
-      y: $(window).height()/2
-    }
-
-
-
-    if( Math.random() > 0.5){
-      this.x = $(window).width()*Math.random()
-      this.y = Math.random() > 0.5 ? -Math.random() - 100 : $(window).height() + Math.random() + 100
-    }else{
-      this.x = Math.random() > 0.5 ? -Math.random() - 100 : $(window).width() + Math.random() + 100
-      this.y = $(window).height()*Math.random()
-
+  <header id="header">
+    <div class="vert-text">
+      <h1 id="typer-size">
+        <!-- TEXTS -->
+        <span id="typed"></span>
+        <div id="typed-strings">
+          <p>Code and Hardware Inc.</p>
+          <p><span class="#">Enterprise Solutions</span></p>
+          <p>Software & Web Development</p>
+          <p>Outsourcing & DevOps</p>
+          <p>Scrums & Project management</p>
+          <p>Chaos Engineering</p>
+          <p>IT & Tech Consulting</p>
+          <p>Datacenter Maintenance</p>
+          <p>and many more solutions</p>
+        </div>
+        <!-- TEXTS ENDS -->
+      </h1>
+    </div>
+  </header>
+  <!-- FOOTER  -->
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> <small class="text-muted"> 2019. Code And Hardware Inc. |
+        Panamá</small>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!-- FOLLOW -->
+  <script>
+    var scrollToElement = function (el, ms) {
+      var speed = (ms) ? ms : 600;
+      $('html,body').animate({
+        scrollTop: $(el).offset().top
+      }, speed);
     }
 
-    this.s = Math.random() * 2;
-    this.a = 0
-    this.w = $(window).width()
-    this.h = $(window).height()
-    this.radius = random > .2 ? Math.random()*1 : Math.random()*3
-    this.color  = random > .2 ? "#73D59B" : "#6658D7"
-    this.radius = random > .8 ? Math.random()*2.2 : this.radius
-    this.color  = random > .8 ? "#6658D7" : this.color
-  }
+    $(document).ready(function () {
+      $('.nav-link').on('click', function (e) {
+        e.preventDefault();
+        var el = $(this).attr('href');
+        scrollToElement(el);
+      });
 
-  calculateDistance(v1, v2){
-    let x = Math.abs(v1.x - v2.x);
-    let y = Math.abs(v1.y - v2.y);
-    return Math.sqrt((x * x) + (y * y));
-  }
+      $(window).scroll(function () {
+        var x = $(window).scrollTop();
 
-  render(){
-    this.canvas.beginPath();
-    this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    this.canvas.lineWidth = 2;
-    this.canvas.fillStyle = this.color;
-    this.canvas.fill();
-    this.canvas.closePath();
-  }
+        if (x >= 42) {
+          $("#navbar").fadeIn(300);
+        } else {
+          $("#navbar").fadeOut(300);
+        }
 
-  move(){
+      });
+    });
 
-    let p1 = {
-      x: this.x,
-      y: this.y
-    }
+    (function () {
+      'use strict';
 
-    let distance = this.calculateDistance(p1, this.point_of_attraction)
-    let force = Math.max(100, (1 + distance));
+      // WAIT FOR ALL TO BE LOADED
+      window.onload = function () {
 
-    let attr_x = (this.point_of_attraction.x - this.x)/force;
-    let attr_y = (this.point_of_attraction.y - this.y)/force;
+        // add loaded class to html
+        var root = document.documentElement;
+        root.className += ' loaded';
 
-    this.x += (Math.cos(this.a) * (this.s)) + attr_x;
-    this.y += (Math.sin(this.a) * (this.s)) + attr_y;
-    this.a += (Math.random() > 0.5 ? Math.random() * 0.9 - 0.45 : Math.random() * 0.4 - 0.2);
+        // TYPING EFFECT
+        Typed.new('#typed', {
+          stringsElement: document.getElementById('typed-strings'),
+          loop: true,
+          typeSpeed: 1,
+          backSpeed: 2,
+          startDelay: 1000,
+          backDelay: 1200
+        });
+      }; // all loaded
 
-    if( distance < (30 + Math.random()*100) ){
-      return false;
-    }
+    }());
 
-    this.render();
-    this.progress++;
-    return true;
-  }
-}
+    ! function (t, s, e) {
+      "use strict";
+      var i = function (t, s) {
+        var i = this;
+        this.el = t, this.options = {}, Object.keys(r).forEach(function (t) {
+            i.options[t] = r[t]
+          }), Object.keys(s).forEach(function (t) {
+            i.options[t] = s[t]
+          }), this.isInput = "input" === this.el.tagName.toLowerCase(), this.attr = this.options.attr, this
+          .showCursor = !this.isInput && this.options.showCursor, this.elContent = this.attr ? this.el.getAttribute(
+            this.attr) : this.el.textContent, this.contentType = this.options.contentType, this.typeSpeed = this
+          .options.typeSpeed, this.startDelay = this.options.startDelay, this.backSpeed = this.options.backSpeed, this
+          .backDelay = this.options.backDelay, e && this.options.stringsElement instanceof e ? this.stringsElement =
+          this.options.stringsElement[0] : this.stringsElement = this.options.stringsElement, this.strings = this
+          .options.strings, this.strPos = 0, this.arrayPos = 0, this.stopNum = 0, this.loop = this.options.loop, this
+          .loopCount = this.options.loopCount, this.curLoop = 0, this.stop = !1, this.cursorChar = this.options
+          .cursorChar, this.shuffle = this.options.shuffle, this.sequence = [], this.build()
+      };
+      i.prototype = {
+        constructor: i,
+        init: function () {
+          var t = this;
+          t.timeout = setTimeout(function () {
+            for (var s = 0; s < t.strings.length; ++s) t.sequence[s] = s;
+            t.shuffle && (t.sequence = t.shuffleArray(t.sequence)), t.typewrite(t.strings[t.sequence[t
+              .arrayPos]], t.strPos)
+          }, t.startDelay)
+        },
+        build: function () {
+          var t = this;
+          if (this.showCursor === !0 && (this.cursor = s.createElement("span"), this.cursor.className =
+              "typed-cursor", this.cursor.innerHTML = this.cursorChar, this.el.parentNode && this.el.parentNode
+              .insertBefore(this.cursor, this.el.nextSibling)), this.stringsElement) {
+            this.strings = [], this.stringsElement.style.display = "none";
+            var e = Array.prototype.slice.apply(this.stringsElement.children);
+            e.forEach(function (s) {
+              t.strings.push(s.innerHTML)
+            })
+          }
+          this.init()
+        },
+        typewrite: function (t, s) {
+          if (this.stop !== !0) {
+            var e = Math.round(70 * Math.random()) + this.typeSpeed,
+              i = this;
+            i.timeout = setTimeout(function () {
+              var e = 0,
+                r = t.substr(s);
+              if ("^" === r.charAt(0)) {
+                var o = 1;
+                /^\^\d+/.test(r) && (r = /\d+/.exec(r)[0], o += r.length, e = parseInt(r)), t = t.substring(0,
+                  s) + t.substring(s + o)
+              }
+              if ("html" === i.contentType) {
+                var n = t.substr(s).charAt(0);
+                if ("<" === n || "&" === n) {
+                  var a = "",
+                    h = "";
+                  for (h = "<" === n ? ">" : ";"; t.substr(s + 1).charAt(0) !== h && (a += t.substr(s).charAt(
+                      0), s++, !(s + 1 > t.length)););
+                  s++, a += h
+                }
+              }
+              i.timeout = setTimeout(function () {
+                if (s === t.length) {
+                  if (i.options.onStringTyped(i.arrayPos), i.arrayPos === i.strings.length - 1 && (i.options
+                      .callback(), i.curLoop++, i.loop === !1 || i.curLoop === i.loopCount)) return;
+                  i.timeout = setTimeout(function () {
+                    i.backspace(t, s)
+                  }, i.backDelay)
+                } else {
+                  0 === s && i.options.preStringTyped(i.arrayPos);
+                  var e = t.substr(0, s + 1);
+                  i.attr ? i.el.setAttribute(i.attr, e) : i.isInput ? i.el.value = e : "html" === i
+                    .contentType ? i.el.innerHTML = e : i.el.textContent = e, s++, i.typewrite(t, s)
+                }
+              }, e)
+            }, e)
+          }
+        },
+        backspace: function (t, s) {
+          if (this.stop !== !0) {
+            var e = Math.round(70 * Math.random()) + this.backSpeed,
+              i = this;
+            i.timeout = setTimeout(function () {
+              if ("html" === i.contentType && ">" === t.substr(s).charAt(0)) {
+                for (var e = "";
+                  "<" !== t.substr(s - 1).charAt(0) && (e -= t.substr(s).charAt(0), s--, !(s < 0)););
+                s--, e += "<"
+              }
+              var r = t.substr(0, s);
+              i.attr ? i.el.setAttribute(i.attr, r) : i.isInput ? i.el.value = r : "html" === i.contentType ? i
+                .el.innerHTML = r : i.el.textContent = r, s > i.stopNum ? (s--, i.backspace(t, s)) : s <= i
+                .stopNum && (i.arrayPos++, i.arrayPos === i.strings.length ? (i.arrayPos = 0, i.shuffle && (i
+                  .sequence = i.shuffleArray(i.sequence)), i.init()) : i.typewrite(i.strings[i.sequence[i
+                  .arrayPos]], s))
+            }, e)
+          }
+        },
+        shuffleArray: function (t) {
+          var s, e, i = t.length;
+          if (i)
+            for (; --i;) e = Math.floor(Math.random() * (i + 1)), s = t[e], t[e] = t[i], t[i] = s;
+          return t
+        },
+        reset: function () {
+          var t = this;
+          clearInterval(t.timeout);
+          this.el.getAttribute("id");
+          this.el.textContent = "", "undefined" != typeof this.cursor && "undefined" != typeof this.cursor
+            .parentNode && this.cursor.parentNode.removeChild(this.cursor), this.strPos = 0, this.arrayPos = 0, this
+            .curLoop = 0, this.options.resetCallback()
+        }
+      }, i["new"] = function (t, e) {
+        var r = Array.prototype.slice.apply(s.querySelectorAll(t));
+        r.forEach(function (t) {
+          var s = t._typed,
+            r = "object" == typeof e && e;
+          s && s.reset(), t._typed = s = new i(t, r), "string" == typeof e && s[e]()
+        })
+      }, e && (e.fn.typed = function (t) {
+        return this.each(function () {
+          var s = e(this),
+            r = s.data("typed"),
+            o = "object" == typeof t && t;
+          r && r.reset(), s.data("typed", r = new i(this, o)), "string" == typeof t && r[t]()
+        })
+      }), t.Typed = i;
+      var r = {
+        strings: ["These are the default values", "Try them", "Use your own!", ".."],
+        stringsElement: null,
+        typeSpeed: 0,
+        startDelay: 0,
+        backSpeed: 0,
+        shuffle: !1,
+        backDelay: 500,
+        loop: !1,
+        loopCount: !1,
+        showCursor: !0,
+        cursorChar: "|",
+        attr: null,
+        contentType: "html",
+        callback: function () {},
+        preStringTyped: function () {},
+        onStringTyped: function () {},
+        resetCallback: function () {}
+      }
+    }(window, document, window.jQuery);
+  </script>
+  <script src="https//code.tidio.co/32p33hi88odwwynxfr6vity3yck0bbnz.js"></script>
 
-function popolate(num){
-  for (var i = 0; i < num; i++) {
-    setTimeout(
-      function(x){
-        return function(){
-          // Add particle
-          particles.push(new Particle(canvas))
-        };
-      }(i)
-      ,frequency*i);
-  }
-  return particles.length
-}
+</body>
 
-function createSphera(){
-  let radius = 180
-  let center = {
-    x: $(window).width()/2,
-    y: $(window).height()/2
-  }
-}
-
-function clear(){
-  canvas.globalAlpha=0.06;
-  canvas.fillStyle='#1B1B38';
-  canvas.fillRect(0, 0, tela.width, tela.height);
-  canvas.globalAlpha=1;
-}
-
-/*
- * Function to update particles in canvas
- */
-function update(){
-  particles = particles.filter(function(p) { return p.move() })
-  // Recreate particles
-  if(time_to_recreate){
-    if(particles.length < init_num){ popolate(1); console.log("Ricreo") }
-  }
-  clear();
-  requestAnimationFrame(update.bind(this))
-}
-update()
-
-     </script>
-      </body>
 </html>
