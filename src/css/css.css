@@ -24,7 +24,7 @@ body {
   }
 
   #typer-size {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   a:hover,
@@ -116,14 +116,12 @@ body {
   }
 
   .title_grn {
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: bolder;
   }
 
-  @charset "UTF-8";
-
-  *,
+ *,
   ::after,
   ::before {
     -webkit-box-sizing: border-box;
